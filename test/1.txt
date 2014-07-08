@@ -1,0 +1,758 @@
+
+---------------------------------------------------
+Open RBR IRC Developer Chat on 3DNet (#rbr) 
+(unedited version)
+Organizer: Boatrocker.com
+Date: Thursday, May 21, 1998
+Visitors: Stephen Bahl, John Faulkenbury, Rob Heironimus, Stephen 
+Palmer, Randy Pitchford, Billy Zelsnack
+
+The chat started at around 7PM CST, and lasted 
+until roughly 8:45. The chat format started out as 
+a short moderated specific question session, and 
+then moved on to free form chat.
+
+Nicks:
+Stephen Bahl: deepstrik
+John Faulkenbury: MockinBRD
+Rob Heironimus: Booth
+Stephen Palmer: Reichert
+Randy Pitchford: DuvMagic
+Billy Zelsnack: ratio
+---------------------------------------------------
+
+<Jobe> first off, I'd like to welcome the you guys to the first major RBR interview on IRC, brought together by Boatrocker.com. Thanks for coming you guys, you rock
+<Jobe> I guess we'll let the RBR guys go down the line and introduce themselves
+* Reichert nudges booth
+<Jobe> booooooooooth :)
+<Reichert> he's got stage fright
+<Jobe> heheh
+* MockinBRD just shoots him.
+<Booth> sorry
+<deepstrik> un, hi....im an artust.....du...
+<Booth> my name's Rob and I'm a chronic level designer
+*** Bred (mlandy@sd-ppp-345.abac.net) has joined #rbr
+<DuvMagic> I'm Randy Pitchford...  Designer
+<Reichert> i'm reichert.  i don't have a real name.  i'm a level designer
+<MockinBRD> I'm John Faulkenbury, game programmer.
+<deepstrik> stephen, cave man artist....
+<DuvMagic> Later, we'll be joined by Billy Zelsnack, engine Jedi
+<DuvMagic> Not with us is Dirk Jones, artist, James Storey, artist, Brian Martel, artist...
+<DuvMagic> Perhaps Bahl can convince Landon to jump in..
+<deepstrik> he is here
+<Jobe> now we're gonna start in on the questions
+*** HellBring (hbringer@armanet.com) has joined #rbr
+<deepstrik> Landon is here looking over my shoulder....
+<DuvMagic> Okay, so Landon's with us too...He does some of the dope models and animation you'll see in the game.
+<Reichert> though he hasn't modeled any dope yet
+<Jobe> first question's gonna be from Quad-NrG
+<Jobe> <QuaD-NrG> yo RBR p33ps: I am a game developer(sorta). I was wondering about wether i should use java or c++. i know more c++, but sum of use linux. i don't have linux yet and don't wanna miss all the winblow users. wha should i do?
+<Jobe> John Faulkenbury will be taking this one
+<MockinBRD> The choice of what language to use is mostly a 'fitness to purpose' question... depending on what you're doing, one language may (may!) be superior to another.  C++ and Java are both 'derived' from C, but Java does a cleaner job of implementing an object oriented style.  If the choice really were given to me, it would be between **C** and Java, C++ is a half-breed bastard child. (Bjarne should be dragged into the street and shot.  Long live K+R!)
+<DuvMagic> Heh
+*** dweomer (dweomer@houri.planetquake.com) has joined #rbr
+*** G_Rain (GothicRain@204.210.170.57) has joined #rbr
+*** Carlos (kenwood@200.19.106.74) has joined #rbr
+<DuvMagic> If you want to be the pimp mod author for Prax War, and the future id products, Java is the way to go...
+<Leviticus>  Message questions to Jobe
+<DuvMagic> Others will follow suit.
+<MockinBRD> As well, most of the 'speed' issues that people complain about with Java are not really an issue (i.e. you could even write, say, a first person shooter with it. ;)
+*** Leviticus sets mode: +o dweomer
+<MockinBRD> For our title, Java is the _only_ way to go, as a matter of fact.
+*** Oasis[PTH (human@205.138.184.101) has joined #rbr
+<Jobe> <Hanif> are there gonna be any utils released with the game? if so what are they? like id has a level editor and sined.. and unreal comes with the unrealed beta.. what is praxwar coming with?
+<MockinBRD> We are releasing the internal pieces of the engine that will allow simple building of editors, utils, etc... but we are not releasing 'an editor' as such.  It is the position of the company (i.e. Billy ;) that a 'sanctioned' editor tends to stifle the creation of more interesting editors, et al, than we could hope to do... each one fitted to a different purpose.  For example, there were Quake editors that would do anything from wacky geometry stuff to floor
+<DuvMagic> We dig id's style...We'll release specs and code up the wazoo and see what people do with it.
+<MockinBRD> BUT... using the modules that we give out, you'll EASILY (and I mean like 10 lines of code easy) be able to have an editor running, all in Java. ;)
+*** ratio (billy@206.242.193.137) has joined #rbr
+<DuvMagic> As opposed to forcing our tools on the public...
+*** Reichert sets mode: +o ratio
+<DuvMagic> Billy!
+<Jobe> Ladies and gentleman, Billy Zelsnack, Lead Programming Jedi Knight at RBR
+<ratio> ok, what the hell is going on.
+<DuvMagic> Heh
+<Jobe> some sort of interview thing...
+* DuvMagic buys a clue
+<Jobe> <Langsuayer> q: how comes that RBR sucks so much at deathmatch?why don't you just play ritual and get a serious beatdown? <g>
+<ratio> tools. what have people said so far so I am in line with that.
+<MockinBRD> BillyZ in da hauz.... (sp?)
+<DuvMagic> Between us, we hold a fair share of rockfullness in the DM department
+*** Bred has quit IRC (Write error to Bred[sd-ppp-345.abac.net], closing link)
+<DuvMagic> Last time I checked, Ritual dudes were saying they were too *busy* to deathmatch with us..
+<Reichert> i think ritual is full of girly men who don't know how to aim a super shotgun
+<DuvMagic> Yet, Onethumb's talking about Sin DM every day in his .plan..
+*** G_Rain is now known as G_Rain_Wi
+<DuvMagic> Me thinks they're afraid...MWAHAHAHA
+*** G_Rain_Wi is now known as G_Rain
+<DuvMagic> Palmer and I can school anyone in DooM][
+<DuvMagic> Rob and Landon can do the house out of the booth in Q
+<DuvMagic> Let's not even talk about Duke3d....no contest.
+<DuvMagic> Yeah, we play games..
+* DuvMagic stops boasting
+*** manzer (Outsider@dial-m2-R36.dodgenet.com) has joined #rbr
+<Jobe> note: Lang sez your wrong <g>
+<DuvMagic> heh
+<ratio> huh. people say i should pay attention
+<ratio> paste the question
+<Jobe> <AlphaMale> Question:  We have seen a huge outbreak of cheating, particularly hacked maps, aimbots, proxies etc...used in Quake Engine based games, what are you guys gonna do to insure that the honest people in the gaming community dont get pissed off at cheating in your games, like they are pissed off in Quake Engine based games?  :)
+<ratio> downloadable clientside code
+*** bla (bla@nas-nh5-25.ix.netcom.com) has joined #rbr
+<ratio> that makes sure all the kids are running the same code
+*** Kamarov (Trinity@dial08.ccco.mb.ca) has left #rbr
+<ratio> still, people are going to cheat. 
+<DuvMagic> Prolly no way to stop server cheating, though...  
+<ratio> don't play on a cheating bastard server
+*** GregS (GregSco@gregs.xnet.com) has joined #rbr
+*** SoLo (SoLo@d163.cloud2.interaccess.com) has joined #rbr
+*** G_Rain (GothicRain@204.210.170.57) has left #rbr
+<Jobe> <Scratch> How much interactivity will be in the levels? i.e. breakable objects, movable/useable, plungers?
+<ratio> this moderated stuff is really slow..
+*** Oasis[PTH (human@205.138.184.101) has left #rbr
+<Booth> scratch:  as much as possible as long as it doesn't break the game.  if something seems like it should be broken or used, we're going to let you do it.
+<Jobe> <Damocles> Will PraxWar be featuring a co-op mode ? And will it be following the single player scenario precisely ? (Without a loss to NPC interaction ?)
+<Reichert> yeah
+<Reichert> breaking stuff is cool
+*** deepstrik (stephen@206.242.193.136) has left #rbr
+<DuvMagic> Brian always tells us about a moto at one of the other companies he used to work at like ten years ago...People like to blow stuff up.
+*** Tretton (die_freita@pC19F17C0.dip.t-online.de) has joined #rbr
+<DuvMagic> Anyway...Co-op..
+*** Tretton (die_freita@pC19F17C0.dip.t-online.de) has left #rbr
+<DuvMagic> Co-op is important, no doubt about it...We've got some killer ideas, but co-op is always one of those things that really gets polished at the end.
+*** Carlos has quit IRC (Leaving)
+<DuvMagic> Because we care about co-op, we're designing most of our stuff to comfortably allow for it.
+<DuvMagic> My ideal situations will allow for custom co-op oriented challenges and fights specifically for co-op modes...but that might come later..
+<DuvMagic> Co-op is to single player as CTF is to deathmatch...they really deserve their own maps.
+* DuvMagic is done with that question
+<Jobe> <Citizen_D> will the java code be compiled into native x86 code, or will there be some sort of virtual machine (interpreter) as in unreal? will an api for the engine be released?
+<ratio> we just use sun's jdk and will ship with their jre. The jre supports JIT compiling, so it is fast. I think people will appreciate using a real language.
+<ratio> As for an api, the game itself is a plugin. There is a directory called engine. In that is rbr1.jar. Run javadoc on it, open up your browser and you have the documentation. 
+<ratio> the engine is two piece, a java base interface, and c side .dll for speed critical stuff like rendering and collision stuff
+<Jobe> <Hanif> what will be the main boundary setting prax war apart from every other FPS coming out this/next year ? Im not speaking about technology specifically - I mean the actualy game in itself?
+<Reichert> well, we gots stuff like indoor and outdoor environments (*gasp), as well as the fact that you are working with a team of soldiers ... you won't have the lone gun feeling as in previous shooters
+<Reichert> we're also bringing back the mow down concept
+<Reichert> kill 50 guys at a time instead of 2
+<DuvMagic> Billy's really tried to design the tech *around* the kind of game we wanted to make...
+<Reichert> good fun
+<ratio> elaborate on the team..
+*** Kandyman (a7236657@e18.dialin.tuwien.AC.AT) has joined #rbr
+<DuvMagic> Eclipse Team Rulz..
+*** TheSaint (thesaint@dt0c1n79.san.rr.com) has joined #rbr
+<ratio> ok, i will then
+<DuvMagic> The reasons for the team are to solve some of the problems with first person
+<DuvMagic> Take a third person game for example..
+<DuvMagic> Like tomb raider..
+<DuvMagic> It sucks to control her, but it rules to see her do stuff...
+<DuvMagic> Like back flip or climb up walls...whatever..
+<DuvMagic> Our animators use Eclipse team to really impress us and entertain us with cool stuff..
+<DuvMagic> From an almost third person perspective...without losing the immersiveness of first person..
+*** SoLo has quit IRC (War doesn't determine who's right, just who's left.)
+<DuvMagic> From the first person perspective of the player, you get all the cool stuff that's in a third person game..
+<ratio> 3rd person just sucks. who wants that crap.
+<DuvMagic> Also, they help with the story, and help keep the player from getting too confused..
+<DuvMagic> One main rule with the good guy team is the they're NOT annoying..
+<DuvMagic> How many people here freaking HATED Natashia in Golden Eye...Dumb bitch always let herself get shot..
+<Jobe> <Biowizard> How will vehicles be used in PraxWars DM?
+<Booth> Bio:  we're going to be experimenting with that one.  we'll probably split up the gameplay so there are driveable and undriveable sections.
+<Booth> But if we find out that it's fun to run over people on foot, we'll make sure to find a way to put that in.
+<Reichert> as long as it makes a crunchy squishing noise
+<DuvMagic> Heh
+<Jobe> <dweomer> does praxwar support dedicated servers?  internet master servers for finding games?
+<DuvMagic> I'm excited about using mounted weapons to give us more weapon types without cluttering up the interface.
+*** GregS (GregSco@gregs.xnet.com) has left #rbr
+*** bla (bla@nas-nh5-25.ix.netcom.com) has left #rbr
+* DuvMagic looks around curiously...
+*** bla (bla@nas-nh5-25.ix.netcom.com) has joined #rbr
+<ratio> The game is always client/server regardless if you are playing one player. So yes, dedicated. As for searching, probably a gamespy thing.
+*** bla (bla@nas-nh5-25.ix.netcom.com) has left #rbr
+<Jobe> <QuaD-NrG> ok here is a real question: Where can i get the JRE and JDK that u use?
+<ratio> jdk is at:  java.sun.com
+<Jobe> <Damocles> Will we be seeing melee weapons in PraxWar ? 'Effective' melee weapons ? (Unlike puny axes, as examplified in other games)
+<ratio> jre is a stripped down one that you can distribute. all you really need is any java compiler.
+<DuvMagic> Right now we have a military knife....
+<DuvMagic> I'm totally down with suggestions for the ultimate melee weapons
+<Reichert> hard to beat the ol chainsaw ...
+<DuvMagic> Our modelers and animators can do just about anything...So let's make it fun and consistent...
+<Jobe> <kylania> Will Prax's weapons be as 'physical' as say the Doom][ shotgun, or Quake II's railgun? Most FPS games have more 'flashy' guns instead of 'in-your-face' guns. Thoughts?
+<DuvMagic> Oh, BTW - Don't hold us to the knife..none of the weapons are *final* even the ones you've seen in the shots.
+<Reichert> all of our weapons will be super gratifying to use
+<Reichert> wimpy guns suck
+<Booth> we've spent a lot of time playing all of the FPS games, especially doom, and we're hoping to capture the best qualities of all them.
+*** Arsenal- (mgrocki@pm234-01.dialip.mich.net) has joined #rbr
+<MockinBRD> "super gratifying" - that *must* go on the box.
+<DuvMagic> Balance, sense of power, interest factor, and logic are all factors for weapon design..
+<DuvMagic> Oh, no redundancy, either...
+*** Retrieving #rbr info...
+<Booth> we're not going to put in any weapons just because they have a nice "effect"
+<ratio> damn
+<Jobe> ok guys, moderated questions are over. time for free chat. let loose the hounds :)
+*** Retrieving #rbr info...
+*** Jobe sets mode: -m
+*** HellBring (hbringer@armanet.com) has left #rbr
+<kylania> Thanks for the answers :)
+<Arsenal-> Hello
+*** Scratch has quit IRC (Leaving)
+<Arsenal-> ratio, what do you use for hidden surface removal? Something like portals?
+<kylania> How will the team aspect work? WIll you have limited control over team mates?
+<Biowizard> Will you guys be including multiple gameplay modes/mods off the CD (CTF...), or will the community be working that out?
+<DuvMagic> Heh...the tough questions cometh...
+<QuaD-NrG> Can u kill ur team members? FUN!
+<DuvMagic> Biowiz, can't commit yet.
+<Langsuyar> do you have inflatable sheep in the game?
+<MockinBRD> Biowizard: Some of each.
+<DuvMagic> Kylan, yes...limited.  It's not a squad command type game.
+<MockinBRD> Langsuyar: Just one.
+<Booth> quad:  we will let you kill them, but you really don't want to do that...really.
+<DuvMagic> Lang, good idea.
+<ratio> arsenal, portals are only used to remove excessive overdraw. Mostly just good old common sense culling.
+<Reichert> lang: no but there's one in our office
+<Reichert> um, no further comment on that
+<kylania> Prax War - super gratifying - now with a free LoveEwe in each box!
+<DuvMagic> Billy, tell the draw backs of portals..
+<Langsuyar> we have so many inflatable sheep here...you can't top that :)
+<ratio> uh..
+<DuvMagic> ok, nevermind...
+<Langsuyar> apart from the ppl working here, dammit ;)
+<ratio> portals have there usefullness
+<MockinBRD> Like I said, we just have one. :P
+<DuvMagic> Sorry..
+<Jobe> MockinBRD prefers high speed flying chrome pigs
+<talmand> will you guys have a behind doors type thing or a booth at E3?
+<Booth> talmand: yes
+<MockinBRD> talmand: yeppers.
+<ratio> behind doors
+<kylania> Will there be a demo before the game is released?
+<MockinBRD> "inside the booth", as it were.
+<Biowizard> Do you believe in the BFG/Disintegrator Ray principle?  Will some ultimate weapon perhaps show up, or will that be too unbalancing?
+<DuvMagic> Mock, that's sick, man.
+<Arsenal-> What do you mean "common sense culling?" Like backface, frustum and all that jazz? Is there a far plane?
+<ratio> kylania, ea will have to answer that one.
+<DuvMagic> Even the ultimate weapons are balanced...
+*** QuaD-[PT] (quad@jln230.janics.com) has joined #rbr
+<QuaD-[PT]> got disconnected
+<DuvMagic> Bio, it's sometimes fun to have guns that *feel* really hairball, but they only capable of delivering so much damage per second...every weapon has a weakness..
+<Damocles> rbr - Did you consider the option to drive vehicles in teams ? i.e. one player driving, while another directs the mounted gun ?
+<kylania> What kind of musical style will there be?  Techno? Metal? Big Band?
+<ratio> arsenal, of course backface and culling. I hate far clipping planes, so no. I have one, but it is only used in the editor. Mostly limiting the visiblity set for any given area. Similiar to portals, but more general and not requiring a closed container for the vis set.
+<MockinBRD> kylania: Kenny Rogers has almost signed, but that's unofficial.
+<DuvMagic> Damo, Absolutely...We've talked a bunch about what fun vehicle based capture the flag type games could be...
+<Booth> kylania:  music is still in the air as of right now
+<ratio> oh man.. i am gonna talk about my bus thing again.
+<Reichert> i am pushing for african tribal dance music
+*** QuaD-NrG has quit IRC (Ping timeout for QuaD-NrG[jln234.janics.com])
+<AlphaMale> <AlphaMale> Question: We know you might be able to blow up inanitmate objects, there are enemies, vehicles, and you have a team of allies...are there any other indegenious animals or creatures we can shoot for sport, like sheep?  (You gotta love farm animals for recreation)
+<kylania> Liquid Tension Experiment level music would rock :)
+*** QuaD-[PT] is now known as QuaD-NrG
+<ratio> ok.. you line up these buses, and then you jump them them. stephen, go build a bus.]
+<MockinBRD> AlphaMale: I'm gonna get Langsuyar to send you a LoveEwe. :P
+<DuvMagic> I'd like to see some wild life just for ambience...but we're not making a hunting game...We'll see what *feels* right.
+<Booth> alpham:  if we find the time and room, we'll put them in
+<MockinBRD> DuvMagic: I don't think he meant *hunting*.
+<kylania> Duv, Duck Hunter is selling really well ;)
+<Jobe> yea, but look at all those bass fishing games ;)
+*** downinit (blah@COLEMAN.lith.com) has left #rbr
+<QuaD-NrG> LOL
+<DuvMagic> Hehe...There's more to our game than the bottom line of sales, Ky..but I get your point..
+<AlphaMale> bleck,I hate hunting, I meant more like "God I cant believe I cant beat the final boss, I am gonna go kill some sheep"
+<Damocles> rbr - May there be 'innocent bystanders' (or similar) (e.g. as in Jedi Knight) who may be in need of protection, etc. ?
+<DuvMagic> Alpha, heh...yeah
+<kylania> Yeah, will there be fishing rods? Can you use fishing wire as a garrot?
+<DuvMagic> Alpha, were you one of the ten people that played Shadow Warrior?  I had a lot to do with the bunnies in that game..
+<Jobe> trip wire ;)
+<Reichert> damocles: i think protecting stupid AI people sucks
+<Booth> damocles:  no one you come across (that's not on your team) will be innocent
+<DuvMagic> They were just plain fun to kill...
+<ratio> i personally don't like dudes you can't shoot.. look at blake stone. i killed all those dudes.
+<Booth> it's like the guys that built the Death Star...they knew what they were getting into
+<ratio> in fact, in jedi, i killed all those dudes too
+<Biowizard> What size levels are you going for with DM as far as player limits?  Will there be any base/sewer64 types included?  
+<kylania> Booth, you'll be including independent contractors at the bases?
+<kylania> :)
+<DuvMagic> Bio...absolutely....
+<Kandyman> will the single player levels be DMable too?
+<Booth> hehe
+<AlphaMale> duval: hahahaa...killing bunnies was kewl :)  The farm animal aspect of RedNeck Rampage was nice ;)
+<DuvMagic> Some of the single player maps will make great 5,000 player deathmatches..
+<DuvMagic> heh
+<Langsuyar> cool, that means my whole family can play
+<Reichert> kandy: we aren't designing single player maps to accomodate dm .. though i'm sure some will end up alright for it
+<Damocles> Reichert : The protection should not be a necessary thing (for game solving), but it is a good atmosphere element 
+<MockinBRD> Kandyman: Sure, if you've got 5000 friends hanging around. :P
+<Biowizard> Lat me be the first to say:  Halleleujah
+<DuvMagic> Lang, heh
+<AlphaMale> RBR: Is your booth gonna be near Gillian Anderson at E3 ;)
+<Kandyman> well, you can always put the DM starts close togther in a cool area
+* QuaD-NrG is gonna buy j00r l33t game. Whada say about tha?
+<Booth> alpha:  i can only hope so.
+<kylania> I say, Hooked oh Phonics is still available, call now :)
+<MockinBRD> AlphaMale: If it's not, we're moving it.
+<DuvMagic> Kandy, yeah...that's what I had to do for some of my huge maps in SW...
+<kylania> err, s/oh/on/
+<MockinBRD> QuaD-NrG: I say, you need to get the 'o', 'y' and 'e' keys fixed so you don't have to type like that any longer.
+<QuaD-NrG> kylania: j00 dissin' m3 l33t way-0-talkin'?
+<DuvMagic> Kandy, I think I'll let you help influence how the single play maps could be made into good deathmatches :)
+<kylania> Quad :)
+<Biowizard> Just to check on the FAQ:  Is PraxWar 3d-accelerated only?
+<Kandyman> some of the Zerstörer SP maps were like that (not that anyone played em in DM ;)
+<Damocles> rbr - Can we expect to see huge levels, and a mass of opponents equal to those had in Doom ?
+<Booth> bio: yes
+<Kandyman> :)
+<DuvMagic> Damo, yes..
+<DuvMagic> HUGE levels..
+<kylania> Booth, any support for the new Matrox MGA200?
+<MockinBRD> Kandyman: SWEET!  You got an umlaut. :)
+<Kandyman> äöüß
+<Booth> uhh...ask Billy
+<kylania> I assume VooDoo 2 is supported..
+<Reichert> damocles: that's the primary objective
+<Reichert> well
+*** Leviticus has quit IRC (<<-NE><GEN CHROME->> v4.3b ©1997, KnightFal ::MAGiQUE BLiSS:: edition)
+<Langsuyar> dammit, i want a fuckin german keyboard here
+<DuvMagic> I've got one city map that's about 15 square miles...It's all action with perfect critical path...Big doesn't equal boring
+<Reichert> an important one anyhow
+<Kandyman> lang: i told you to bring one!
+<ratio> kylania, voodoo2 yes. if there is a gl driver and the card does not suck, then it will work.
+<Langsuyar> tried to, no room in the baggage
+<Langsuyar> and i need ps2
+<QuaD-NrG> Question: Do u recommend a book or something i can learn java with. i got one book but all it goes over is applets and then all it shows is like buttons, textareas, etc.
+*** Arsenal- (mgrocki@pm234-01.dialip.mich.net) has left #rbr
+<MockinBRD> Java is 21 days is good.
+<ratio> quad-nrg, sun has some tutorials on their site. Those are ok.
+<QuaD-NrG> k thanks
+<MockinBRD> And so are any of the O'Reilly books.
+<DuvMagic> QuaD, yeah...avoid Java books written for the web site designer..
+<QuaD-NrG> k
+<MockinBRD> (the ones with the cool b&w animals on em)
+<QuaD-NrG> :)
+<Biowizard> Your FAQ sez you can play as a bunch of different characters, does that mean variable stats/abilities too?
+<Rotwang> Java Software Solutions is decent too.
+<QuaD-NrG> i'm a web site desinnger (pretty good at that, altough i perver cgi on web)
+<ratio> we have a faq?
+<DuvMagic> Bio...no...
+<kylania> Well, thanks for the news guys, keep up the great work!!  (Off to watch Brazil on laser disc :P)
+<dweomer> ooo... good movie
+<DuvMagic> I think xCal and Jobe are working on the FAQ..I should read it :)
+<Booth> bio:  we're going to let you use different MODELS during DM, but stats will be the same.
+<DuvMagic> Bio, You only play the other dudes in DM...choose they're models..
+<Jobe> heh, yea, we'll have to update it after tonight ;-)
+*** kylania has quit IRC (Thanks again!)
+<Reichert> it isn't an rpg
+<DuvMagic> Team fortress is cool, though...I'm going to want to see those dudes do the mod for Prax War.
+<DuvMagic> Should take 'em about a day the way we have stuff set up :)
+<MockinBRD> the only stats that change are your measurements... when you're Cpt. O'Donnel.
+<DuvMagic> HEH
+<DuvMagic> She's cool..
+<Jobe> sweet lovin' down by the fire, as chef would say
+<QuaD-NrG> :)
+* DuvMagic brings up the O'Donnel model...just to *look* at.
+*** dweomer (dweomer@houri.planetquake.com) has left #rbr
+<MockinBRD> Uh, dude.
+<QuaD-NrG> wanna send me a scrn shot so m3 can see h3r
+<DuvMagic> QuaD, not yet :)
+<QuaD-NrG> :)
+<Booth> you can always have the picture of me with plastic easter eggs covering my eyes....
+<DuvMagic> After E3 I'll talk to the EA dudes about getting some the characters out in the magz...then we can do profiles and stuff on the sites like boatrocker.com
+<MockinBRD> Oooooooooh, shexy.
+<Biowizard> Do you plan on including "techs" in PW?
+* QuaD-NrG don't get to go to e3
+<Damocles> Hmm...I am almost devoid of further questions now...Weird...
+<DuvMagic> techs?  like scientist type actors?
+*** Asterix (CW@dialin-pm3-miami-FL-2-18.netrus.net) has left #rbr
+<Biowizard> techs...regen, power, resist
+<ratio> i am going back to work. bye.
+<DuvMagic> Oh...powerups..
+*** ratio (billy@206.242.193.137) has left #rbr
+<DuvMagic> Q2 CTF stuff..
+<MockinBRD> QuaD-NrG: Imaging Lara Croft + Hank Rollins had a child, and it was a girl.
+<DuvMagic> We've got stuff like that...
+<Langsuyar> rbr: why'd you choose those screens btw? they don't show any of the really good stuff ;)
+<QuaD-NrG> whos Hank Rollins?
+<Langsuyar> i wanna see the city, and dm1
+<DuvMagic> Items and power-ups are presented realistically in the single player game...they're just laying around for fun factor in DM...
+<MockinBRD> Henry Rollins, dude. :P  Black Flag? Psh.
+<Jobe> damnit...i cant find that easter pic of john...
+<Jobe> blackmail :)
+<MockinBRD> Psh.
+<QuaD-NrG> :0
+<DuvMagic> Lang, EA chose them...there's a lot missing in those shots..
+<Booth> lang:  we'll probably be pretty conservative with our shots for a while yet.
+<DuvMagic> Lang, also we made some decisions about which vehicles and enemies to show first...Things will get gnarlier and gnarlier as we release more.
+<Damocles> rbr - Will it be rather easy to create and apply custom made skins ?
+<Langsuyar> aha
+<MockinBRD> is 'gnarlier' a word?
+<DuvMagic> Damo, yes...
+<DuvMagic> Adhere to the naming conventions and you can do whatever the hell you want art wise...
+<QuaD-NrG> *HE HE*
+<DuvMagic> It'll be easier to get custom models in, too...It's tough for ametures to animate for Quake.
+<MockinBRD> All the art in the game are just raw .TGA files... and our 'pack' format is zip. :)
+<MockinBRD> So you can just use whatever you want to edit, etc.
+<Langsuyar> gotta go eat, later :)
+*** Langsuyar has quit IRC (hashish: Badaboom.)
+<DuvMagic> Yeah, mods are cool...Billy says, "Just download the zip and drop it into your 'mod' directory and it works...you don't even have to unzip it"
+<Damocles> rbr - This pins me down to ask : Around what time will a release date be likely ? This year ? Next year ?
+<QuaD-NrG> When its done. 
+<QuaD-NrG> :)
+<DuvMagic> Heh...EA's saying by the end of the year...We're on that schedule so far...The process is dyanamic..
+<Booth> ewww...the release date question...
+<MockinBRD> QuaD-NrG: I should kick you for that. ;)
+<Biowizard> As far as graphics go, are you aiming for realism or the more psychedelic pretty color scheme?
+<QuaD-NrG> :)
+<DuvMagic> Personally, I hate the "when it's done" thing...I'm a gamer...I want to know..
+*** NASH (NASH@dyn1-tnt4-222.chicago.il.ameritech.net) has joined #rbr
+<Booth> bio:  realism
+<NASH> hi
+<MockinBRD> sup NASH.
+<MockinBRD> Yell much?
+<NASH> what is the topic in this room?
+<QuaD-NrG> DuvMagic: m3 was foolin' with j00
+<DuvMagic> Bio...It is our opinion that colored lighting is abused and looks pretty damn ugly in much of the stuff that's out there now.
+<DuvMagic> NASH, Rebel Boat Rocker and Prax War chat...nearly over now..
+<NASH> what are those?
+<Damocles> I can go with a 'When it's done answer', but a rough aproximate date should always be possible
+<Jobe> are you planning for your next game also use the RBR1 engine, or a dirivitive of it? or are you planning on going with a completely new engine
+<MockinBRD> -sigh-
+<Biowizard> What is a "hitscan" weapon?
+<MockinBRD> NASH: read the topic, and find out. :P
+<DuvMagic> Jobe, don't know yet...let's finish this one :)
+[NASH SOUND]
+<Jobe> heh, fair enough
+<QuaD-NrG> :)
+<NASH> later
+<MockinBRD> Biowizard: Any weapon that hits instantly, rather than launching a projectile.
+<AlphaMale> RBR:There is a general feeling in the gaming community (one that I tend to beleive also) that it seems like some big game companies just DON'T listen to the reasonable suggestions or desires of the gaming community...what do you guys do to insure that you "stay in touch" with the current wants and desires for the gaming community?
+*** NASH was kicked by MockinBRD (MockinBRD)
+<DuvMagic> Bio, A hitscan weapon is a weapon that throws out a ray-cast to instantly determine where the shot will hit.
+<Jobe> (railgun)
+<DuvMagic> Alpha, we play games... We're humble, too...
+<AlphaMale> good answer
+<Booth> alphamale:  we play all the games
+<AlphaMale> ;)
+<DuvMagic> We don't have the belief that our way is the best way...
+<MockinBRD> Jobe: actually, any bullet firing gun... the obverse would be a projectile weapon, such as a rocket launcher.
+<Citizen_D> ehrf
+<Jobe> on the side of Boatrocker.com, the RBR guys have help us out immensely
+<Jobe> they're always willing to help and answer questions
+<DuvMagic> That's why we'll make it as cool as we want, but make it easy for the players to do whatever they want with the game..
+<Jobe> so, they've been really good to the gaming community in that respect
+<Jobe> almost all the prax war material you see on the page was provided to us by the guys
+*** Xaos has quit IRC (Read error to Xaos[exeter163.ttlc.net]: EOF from client)
+*** Teufel (schnetz@208.221.75.114) has joined #rbr
+<Kandyman> duv: will the editor be released, or will users have to wait for 3rd party stuff?
+<DuvMagic> Alpha, Whenever I talk to press people or gamers I always ask, "What do you want to see in a first person action game?"
+*** Teufel (schnetz@208.221.75.114) has left #rbr
+<DuvMagic> Kndy, 3rd party...I want to help some of the programmers I've been watching get started before our release, though.
+<Citizen_D> i want bulletholes in the walls
+<Citizen_D> that's it
+<DuvMagic> We may release specs and stuff early...
+<Jobe> i wanna see clowns
+<Jobe> scariest damn bastards around
+<DuvMagic> Citizen, you've already got it with us :)
+<Booth> citizen: you'll get them
+<Citizen_D> hehe
+<Citizen_D> i'm sold
+<Jobe> some nights i wake up screaming...
+<DuvMagic> bulletholes, blood splatters, tons of squibs..
+<MockinBRD> Citizen_D: Billy is working on that behind me as we type, strangely enough. :)
+<Citizen_D> yes, but do they stay there?
+<Booth> jobe:  what you want is a good psychologist...
+<Citizen_D> like in dook
+<Citizen_D> so when are you sending stomped their special preview beta?
+<QuaD-NrG> blood was a cool game
+<Citizen_D> <G>
+<DuvMagic> Citizen...half the team here is from 3dRealms, man...That shit is way important to us.
+<Jobe> funny...ive been hearing that a lot...
+<Damocles> rbr - What about hit locations ? May we be seeing limping animations or impaired limbs due to injury ?
+<Jobe> hmm, oh well, im gonna go write backwards on my wall now ;-)
+<QuaD-NrG> can we blow off body parts (ie. arm or head)?
+<DuvMagic> Damo...We're doing stuff in that area...
+<Booth> damocles:  you'll be able to target specific parts of the body (and yes you can blow them off)
+<QuaD-NrG> whoa cool
+<DuvMagic> We've got some really cool ideas and r&d in progress to advance things beyond that..but we can't promise anything...
+<Citizen_D> hey
+<Citizen_D> i got a question
+<Kandyman> can you jump higher off ramps, and can you steer in-air (like quake1?)
+<Citizen_D> if speed in java isn't an issue, why the hell are so many java apps so dang slow?
+<AlphaMale> ROCKETJUMPS! ;)
+<Citizen_D> crappy programming?
+<Biowizard> Will you doing much with impact blast physics?  Will I have a weapon that will knock a guy back say...50yds?  Can I hit someone with my car and do the same?
+<DuvMagic> Why are so many programes slow period...C, C++ Java or otherwise...programmers suck.
+<AlphaMale> ouch
+<Citizen_D> doh
+* Citizen_D stands endited
+<QuaD-NrG> AHHH
+* QuaD-NrG is a programmer
+<DuvMagic> Bio, I want to see body pieces fly into the atmosphere if I hit them hard enough :)
+* QuaD-NrG was offended
+<Booth> kandy:  we definitely like that kind of stuff and will be leaning more towards fun than realism
+<Kandyman> cool
+* QuaD-NrG is better now though
+<Damocles> rbr - What about the ability to grab onto things ? (Anyone else wonder why the space marine in Doom has been incapable of crossing a chest height border ?)
+* DuvMagic doesn't mean to insinuate that *all* programmers suck..
+* QuaD-NrG is still gonna buy j00r game
+<Biowizard> Nothing is as satisfying as seeing chucks fly FAR away from a rocket or BFG in Doom][....
+<DuvMagic> I was just talking about most of the programming for the crapplets I've seen written in Java..
+<Jobe> Duv, can you just break limbs and leave them dangling or something with melee weapons?
+<Kandyman> I see it as compensation... if I can reach out and grab an edge in the air, I want in air steering ;)
+<MockinBRD> QuaD-NrG: Well, do you suck?
+<Jobe> instead of having them fly off?
+<Citizen_D> will we ever see rooms packed with monsters like in doom?
+<QuaD-NrG> no
+<DuvMagic> Bio...Yeah..the paste effect in doom is so damn cool!
+<QuaD-NrG> not literly
+<Reichert> citizen: sure thing
+<Booth> citizen:  that's what we're aiming for
+<Citizen_D> heh
+<Citizen_D> cool
+<Citizen_D> i tried to do it in qerad
+<DuvMagic> Jobe, we'll see...We've talked about the joint tolerance tech, but it's not in yet :)
+<Citizen_D> hehe
+<Hanif> hey cit D!
+<Citizen_D> 'lo
+<Hanif> long time no see
+<Citizen_D> sure is, i don't even remember who you are!
+<Reichert> forget this one on one bot ai crap ... i just want to spray a pack of bad guys with bullets
+<Booth> damo:  if something looks like you should be able to scale it, we'll probably let you do it
+<Hanif> haha
+<MockinBRD> QuaD-NrG: I meant your coding ability... :P
+<QuaD-NrG> MokinBRD: on c++ i suck
+<QuaD-NrG> and c
+*** talmand (talmand@user-38h1s8p.dialup.mindspring.com) has left #rbr
+<QuaD-NrG> i was good at java when i used it though
+<DuvMagic> Damo, Just today, in fact, I thought of a cool idea using downward projected ray casts over the players head, but outside the bounding box (ground collision stuff) that are around the player to detect for high ledges to climb up to...That stuff isn't coded yet, though.
+<QuaD-NrG> but then i switched to c++/c
+<MockinBRD> Oh, ok.  There ya go, then don't be offended...
+<Biowizard> Will you be able to order your AI teammates around, like to say...set a trap?
+<MockinBRD> Ouch, that's going DOWN the evolutionary scale. :P
+<DuvMagic> Bio, probably not...
+<Damocles> DuvalMagic - Stick to that idea, please 
+<Booth> bio:  you won't give them commands, but they will definitely do stuff that helps you out on their own.
+<MockinBRD> Biowizard: No, we're purposely not doing that.  We don't want this to be a squad game, or a resource management game.
+<DuvMagic> Damo, we don't like it when it looks like you *can* do something, but aren't permitted to.
+<Jobe> duv, a question that was asked but we didnt get to (i think, at least) was one about whether or not you'll be able to kill your team members :)
+<MockinBRD> GUNFORCE
+<MockinBRD> bleh
+<AlphaMale> So the teammates are there, fight for themselves without being a pain in the ass?
+<MockinBRD> AlphaMale: exactly.
+<DuvMagic> Jobe...You can shoot them...they'll probably get pissed and shoot you back :)  They'll let you make some mistakes though before punishing you for it...
+<AlphaMale> Do your teammates have handles sewn into the back of their outfits so you can pick them up and us them like a shield when the shit hits the fan ;)
+<Booth> the whole team concept is there to give the player a sense that there a part of something larger--not just the only person in the world.
+<Jobe>  so we might see a teammate wail on us if we piss him off too much? 
+<Biowizard> WIll the squaddies foolow you, or, if you desire, can you just leave them?
+<DuvMagic> Here's one of our rules...You lose when you die...Not when someone else dies.
+<DuvMagic> Alpha, that's a cool idea :)  heh
+<AlphaMale> hahah
+<Citizen_D> one of the squad members should be named kenny
+<QuaD-NrG> LOL
+<DuvMagic> Use Frenchie as a human shield..ha!
+<Citizen_D> just inexplicably reappear later
+<DuvMagic> Frenchie is the asshole character of our game.
+<QuaD-NrG> LOL
+<Jobe> launch frenchy off a catapult
+<MockinBRD> Oh my God! They killed Frenchie!
+<Jobe> oh, the irony :)
+<Jobe> launch him over a wall <g>
+<AlphaMale> YOU BASTARDS
+<Damocles> rbr - Did you play Terra Nova ? What did you think of their NPC-AI solution ?
+<Jobe> "run away!"
+<DuvMagic> Damo, I played it, but not enough to fairly evaluate it...Should I give it a closer look?
+<Booth> damo:  i played it a little bit.  still too much management IMO as i recall
+<AlphaMale> RBR:What about weapon switching, I know its a minor point, but slow REALISTIC weapon switching is a nice idea in theory, but I find it a huge pain in the ass 
+<Booth> alpha:  the weapon switching will work however we feel is the most FUN.
+<AlphaMale> YES
+<Jobe> you guys mentioned that levels can be miles wide...if you travel all those miles, to the edge, what are you met with? a mountain? are there any kinds of boundaries?
+<DuvMagic> Alpha...Landon here will kill us all if we don't at least put in an option for instant switching..
+<AlphaMale> w00p
+<DuvMagic> Forcing it allows it to be used in weapon balance...I found it mostly annoying in Q2, though.
+<Damocles> rbr - You had to manage NPC actions via command menu, but they have been influenced by the stories. No character would die before he was supposed to...
+<Reichert> jobe: any map with miles of outdoor area will be controlled ... you really donj't want to wander around ... that'd be boring
+<Damocles> ...a questionable means, but it did aid the story
+<Jobe> just wondering in theory ;-)
+<AlphaMale> duvalmagic: I agree, takes away from the fast action tempo of the game I felt...I like tearing thru baddies FAST
+<MockinBRD> Um, everyone is in here.
+<MockinBRD> Billy got the wall damage decals working. :)
+<Jobe> badass :)
+<Booth> Jobe:  there will be definite boundaries in the map.  we're not making Daggerfall...
+<MockinBRD> They're all standing around his monitor, drooling. ;)
+*** Bakshra (bakshra@ppp-c19.aracnet.com) has left #rbr
+<Jobe> how do they look
+<Jobe> lol, cool booth
+<AlphaMale> mock: can you shoot and spell your name on the wall :)
+<MockinBRD> Similar to Goldeneye, just more realistic.
+<MockinBRD> Heh, I can't.
+<Booth> dude, the decals look pretty killer
+<Jobe> are you going to impliment a form of tagging? similar to the spraypainted logo in Half-Life and the arrows with your name on them?
+<MockinBRD> That's possible... that's the first request we've gotten for that... ask Ran (when he gets back. ;)
+*** TheSaint (thesaint@dt0c1n79.san.rr.com) has left #rbr
+<Damocles> rbr - Concerning weapon switching speed - Switchable option for realistic speeds would find at least my apreciation
+<Jobe> are we going to see a big-head mode option? :)
+<MockinBRD> It will be an option, the server op could set I suppose.
+<MockinBRD> Jobe: Of course.
+<Booth> damo:  we're aiming to make the DM play as customizable as possible so that people can choose the best options for how they want to play
+<MockinBRD> As well as a ton of other secret modes. ;)
+<AlphaMale> Parallel lighting in the game?
+<Jobe> you gotta make it realistic...big-headed mode guys not being able to get thru certain doorways, keeps on bumping his/her head...heh
+<MockinBRD> heh
+<MockinBRD> alpha: Yes.
+<Booth> jobe:  i really want the big-head mode.  I was playing with a plexo model and put big head and feet on him--looked friggin' hysterical
+<QuaD-NrG> wha are the expected min. requirements for this game?
+<MockinBRD> Looked like Elmer Fudd.
+<Biowizard> Are you planning on variable damage?  (headshots do xtra, arm shots just sorta..)  Native Viewable Weapons?
+<MockinBRD> P5-200, 32MB, at least a 3dfx
+<QuaD-NrG> oh no
+<MockinBRD> Biowizard: We're playing with it... again, whatever is most fun.
+<Jobe> Booth: i loved BH mode in Goldeneye. that friggin made the game at 3 o'clock in the morning :)
+<QuaD-NrG> i can't play it
+<MockinBRD> QuaD-NrG: It will run at modes below that, but it will require hardware accel.
+<Damocles> rbr - Viewable weapons ? A good question
+<Booth> bio:  we'll probably do that for the enemies in single-player, but we'll have to see what works best for DM
+<QuaD-NrG> i don't have a good 3d card
+<QuaD-NrG> or video card
+<QuaD-NrG> i have a diamond viper...
+<MockinBRD> That's gonna be a requirement...
+<Jobe> are you guys considering showing something off at quakecon this year?
+<MockinBRD> Jobe: Considering... again, that's a ran question...
+<Booth> Damo:  definitely.  you'll be able to see what weapon every guy in the game has.
+<MockinBRD> -sigh-
+<Jobe> heh
+<AlphaMale> mock: what is the point sampling resolution on the parallel lighting? is it like a quake2 light emiting surface? 
+<MockinBRD> They're all still standing behind me, messing with the game. ;)
+<Damocles> Booth - Please try to make the variable damage (per location) a switchable option in DM !
+<QuaD-NrG> LOL
+<MockinBRD> AlphaMale: It's completely adjustable, per poly.
+<AlphaMale> mock: that rules
+<Biowizard> Will A3D or similar sound systems be supported?
+<MockinBRD> from 1:1 to 1:256 I think.
+<Booth> damo:  we'll definitely try it out
+<Jobe> you guys have any clue over the music for the game?
+<Booth> jobe: not yet
+<AlphaMale> he said kenny rodgers is gonna do it 
+<AlphaMale> ;)
+<AlphaMale> scroll up
+<AlphaMale> :P
+<MockinBRD> i was j/k
+<Jobe> im in and out...studying for finals ;-)
+<MockinBRD> afk
+<AlphaMale> (shhhh, I was messing with em)
+<QuaD-NrG> oh and duvMagic: wanna doom2 dm? (i'll lose)
+<Jobe> booth, did you ever get those plastic easter eggs surgically removed from your eyes?
+<Booth> quad:  i really don't think you want to do that...
+<QuaD-NrG> why
+<Damocles> rbr - You should try contacting John Carpenter to the topic of in-game music ! As I have heard, he agreed to make the music for the 'Sentinel' remake 
+<Booth> jobe: yeah, but it was pretty messy...
+<Jobe> sorry to hear that, man...i still cant believe those things could just explode like that
+<Jobe> freaky as hell
+<Jobe> you should sue
+<Booth> quad:  randy is pretty f'in good when it comes to Doom][.  Him and spalmer play just about every other night
+<Jobe> damnit, i gotta rechallange ran....i was so close that night <g>
+<QuaD-NrG> c00l
+<AlphaMale> I heard that an Easter Egg Eyed Rob is actually one of the hideous enemy end bosses in the game ;)
+* AlphaMale ducks
+<Jobe> 70 to 100 with not playing for months...not bad :)
+<Booth> jobe:  hahahaha!
+<Jobe> especially against such a grand master :)
+<Booth> alpha:  i can't comment on that at this time....
+<MockinBRD> Oh, btw.... mel_lurke is my wife. :)
+<AlphaMale> hahah
+<MockinBRD> I think she's afk tho.
+<Jobe> you should set the twins up, let them mash the keyboard :)
+<MockinBRD> hehe.  She's at home, I'm at the office.
+* QuaD-NrG is 14
+<AlphaMale> mock: nah, I have been sending her dirty private messages ;)
+<MockinBRD> QuaD-NrG: Don't worry, it doesn't show.
+<MockinBRD> AlphaMale: Some things never change.
+<MockinBRD> :P
+<QuaD-NrG> :) sure it dosn
+<AlphaMale> hahah
+<QuaD-NrG> err dosn't
+<QuaD-NrG> i'm sure u all thought i was 20 or something....
+<MockinBRD> uh, yeah.
+<Jobe> hey mock, did you ever get that pig? heh
+* DuvMagic is back...
+<Jobe> hey duv, question...
+<DuvMagic> I was blowing Rob's map to hell :)
+<Damocles> rbr - Another question I am curious about : How did you manage skin stretching on models ? And general skinning quality differences between software and hardware modes (as seen in Quake2) ?
+<Jobe> are you going to impliment a form of tagging? similar to the spraypainted logo in Half-Life and the arrows with your name on them?
+<AlphaMale> they said there is no software mode
+<DuvMagic> Damo, just bi-linear on or off...
+<Biowizard> Will A3D or similar sound systems be supported?
+<DuvMagic> You can run it in software using gl stuff...But it's really hardware emulation..o
+<MockinBRD> Damocles: The models don't have to be cylindrically mapped, like Quake skins... you can flat map and NAT each face.
+<DuvMagic> Damo, the artists really care about solid texel density all around the models..
+<DuvMagic> They developed their own techniques to allow this.
+<Damocles> Hmm...That sounds intriguing
+<Booth> bio: not sure about that, ask one of the programmers
+<DuvMagic> I'll talk the artist into revealing some of their tricks in Game Developer magazine after we ship..
+<Damocles> That would be apreciated
+<DuvMagic> Jobe...we're probably not going to bother with spraypainting logos (doesn't make any sense in single play) but it should take about 10 minutes for a mod author to put it in...
+<QuaD-NrG> RBR r0x0rz
+<Jobe> no doubt ;-)
+<MockinBRD> QuaD-NrG: What does that mean, huh? I don't even know what the hell that means.
+<Citizen_D> boing
+<QuaD-NrG> is it really that easy. could BHorse do it that fast?
+<Citizen_D> gotta run
+*** Citizen_D has quit IRC (getting bent is what you should do.)
+<Jobe> q: are you guys going to give ritual a severe beatdown? :)
+<AlphaMale> rbr: put a spell checker in the game so people dont replace vowels with numbers ;)
+<QuaD-NrG> MockinBRD: that means "RBR rocks the world" :)
+<Booth> if they ever rear their panzy heads...
+<DuvMagic> QuaD, you should know some Java, but you could look at say, the bullet hole code and tweak it a bit to make a quick class you can call to spray paint any art you define..
+<Jobe> r0x0rz is irc slang
+<Jobe> means rocks
+<MockinBRD> AlphaMale: ROFL
+<AlphaMale> :)
+<QuaD-NrG> duv: k 
+<Booth> silly irc people....
+<Jobe> only 3r33t p33ps u53 1t <g>
+<MockinBRD> Jobe: I know, I just wanted to see if he did. ;)  How much harder was it to use actual English™?
+<Jobe> its a #quake2 thing ;-)
+<AlphaMale> 1 ju5t l1k3 t0 m4k3 fun 0f that stup1d cr4p
+<AlphaMale> ;)
+<Kandyman> what about dynamic d/l of maps/models?
+*** MockinBRD is now known as MockAFK
+<Jobe> i dunno man...irc clogs your arteries like bad fondu
+<QuaD-NrG> MockinBRD: i c0me fr0m Gam3zlink. Tak3 m3 t0 j00's l3ad3r
+<Booth> kandyman:  yeas, i'm pretty sure billy's puting that in
+<Jobe> yaya quad...where are all the other losers <g>
+<DuvMagic> That's a Billy thing...He's mentioned that he going to support that, but we'll recommend servers forward the download request to a site that's not running the game (don't want other players to get slowed down)
+<Damocles> rbr - Do I remember right, having read an RBR plan file discussing 'boss-AI' and similar ? Can we expect to see new ideas/designs there ?
+*** DaKine-r3 (CJones@209.52.38.213) has joined #rbr
+<DuvMagic> Damo, yeah...I hate old school 1st person boss fighting...
+*** DaKine-r3 is now known as DaKine
+<DuvMagic> I want to really care about blowing the hell out of the bad guy...It's like anticipating the death scene of a really wicked bad guy in an action flick...You've got to want him to die long before he's going to.
+<Booth> damo:  yeah, we're going to try and provide more interesting ways to fight the bosses
+<Hanif> dakine!
+<DaKine> hanif :)
+<Hanif> hey =)
+<DaKine> whats up lil buddy
+<Hanif> nuttin.. just watching the ion stomr cinterview
+<DaKine> cool
+<DaKine> anything interesting here on Prax wars ?
+*** Reichert has quit IRC (starvation)
+<Jobe> brb, gotta take care of the baby
+*** Jobe is now known as jobe|gone
+<DuvMagic> I'm going to get back to my work...Thanks for coming everyone.   Next time we do this I'll get some door prizes or something together...
+<Damocles> DaKine - You missed it
+<AlphaMale> thanks guys, see you at E3 :)
+<AlphaMale> later
+<DaKine> doh :(
+<DuvMagic> Cool
+<Booth> yeah, I need to get going as well..
+<jobe|gone> thanks rand
+* DuvMagic bails
+<Booth> thanks for setting this up guys
+<Damocles> rbr - Many thanks !!!
+<DuvMagic> Later, Jobe...
+<jobe|gone> np booth
+<jobe|gone> l8r
+<jobe|gone> thanks for comin booth
+<Booth> bye all...
+*** AlphaMale has quit IRC (Leaving)
+*** Booth (rob@206.242.193.131) has left #rbr
+<jobe|gone> l8r
+<DuvMagic> Thanks for the questions...It's good to hear that you all are concerned about the same sorts of things we do...
+* DuvMagic really bails this time.
+*** DuvMagic has quit IRC (Leaving)
+
+---------------------------------------------------
+Thanks goes out to RBR for stopping by and chatting
+with us.
+---------------------------------------------------

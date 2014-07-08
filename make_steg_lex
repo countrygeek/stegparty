@@ -1,0 +1,93 @@
+#!/usr/bin/perl
+#
+# make_steg_lex - script for generating StegParty parsers
+# Copyright (C) 1999  Steven E. Hugg (hugg@pobox.com)
+# 
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+#
+
+print "%{\n";
+print "\tint chooseTerm(char *text, int flags, int nargs, char *args, ...);\n";
+print "\tint noMatch(char *text);\n";
+print "%}\n\n";
+print "BWORD\t" . '([\"\>]|[[:space:]])' . "\n";
+print "EWORD\t" . '([\"\.\:\;\,\<]|[[:space:]])' . "\n";
+print "\n%%\n";
+
+sub genaction
+{
+	my ($flags, $regs) = @_;
+	print "\t{ chooseTerm( yytext, $flags, $#{$regs}+1, " .
+		join(',', map qq/"$_"/, @{ $regs } ) .
+		" ); }\n"
+		;
+}
+
+sub genrule
+{
+	my $typestr = $relist[0];
+	my $type = substr($typestr, 0, 1);
+	my $ignorecase = (index($search, 'c', 1) > 0);
+	my @regexes = @relist;
+	shift @regexes;
+	if ($type eq "w")
+	{
+		print '{BWORD}(' . 
+			join('|', map qq/"$_"/, @regexes) . 
+			')/{EWORD}';
+		genaction(1, [@regexes]);
+		if ($ignorecase)
+		{
+			print '{BWORD}(' . 
+				join('|', map qq/"$_"/, @regexes) . 
+				')/{EWORD}';
+			genaction(1, [@regexes]);
+		}
+	}
+	elsif ($type eq "l")
+	{
+		print '(' . join('|', map qq/"$_"/, @regexes) . ')';
+		genaction(0, [@regexes]);
+	}
+	elsif ($type eq "/")
+	{
+		my $flags=0;
+		if (substr($typestr, 1, 1) eq "/") { $flags++; }
+		print substr($typestr, $flags+1);
+		genaction($flags, [@regexes]);
+	}
+}
+
+@relist = ();
+while (<>)
+{
+	s/(^\s+)|(\s+$)//g;
+	if (/^\s*$/)
+	{
+		if ($#relist > 0)
+		{
+			genrule();
+		}
+		@relist = ();
+	} else {
+		push (@relist, $_);
+	}
+}
+if ($#relist > 0)
+{
+	genrule();
+}
+
+print ".|[\\n\\r]\t{ noMatch(yytext); }\n";

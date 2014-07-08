@@ -1,0 +1,66 @@
+
+
+
+BASE27(1)                                               BASE27(1)
+
+
+NAME
+       base27 - converts text into a different base
+
+SYNOPSIS
+       base27 [ -d ] [ -C codestr ] infile > outfile
+
+DESCRIPTION
+       base27  is  intended  to compress small amounts of textual
+       data (under 100 characters) by converting it to a  differ-
+       ent  base  --  by  default this is base 27, meaning it can
+       encode all uppercase alphabetic characters and whitespace.
+       All  lowercase  characters  are uppercased, and characters
+       that cannot be converted are stripped.
+
+       You can encode/decode  different  sets  of  characters  by
+       passing  an  argument  to  the  -C parameter; for instance
+       passing -C '01' will encode/decode binary strings.
+
+OPTIONS
+       -d          Decode text previously encoded using this pro-
+                   gram.
+
+       -C          Set  the  code  string to be used.  The number
+                   base is set to the  number  of  characters  in
+                   this   string.  The  default  is  "@ABCDEFGHI-
+                   JKLMNOPQRSTUVWXYZ".
+
+       -u          Do not convert  to  uppercase  when  encoding.
+                   This  would  be  used  if lowercase characters
+                   were present in the code string.
+
+SEE ALSO
+       stegparty(1)
+
+AUTHOR
+            Steven Hugg
+            hugg@pobox.com
+            http://pobox.com/~hugg/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0.2                        04 Nov 1999                          1
+
+

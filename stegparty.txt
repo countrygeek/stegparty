@@ -1,0 +1,264 @@
+
+
+
+STEGPARTY(1)                                         STEGPARTY(1)
+
+
+NAME
+       stegparty - tools for hiding data in plain-text files
+
+SYNOPSIS
+       stegparty [-v[v]] -c secretfile -i carrierfile > codedfile
+
+       stegparty -d [-v[v]] -i codedfile > secretfile
+
+DEFINITION
+       "Steganography is the art and science of communicating  in
+       a  way  which hides the existence of the communication. In
+       contrast to cryptography, where the enemy  is  allowed  to
+       detect,  intercept  and modify messages without being able
+       to violate certain security premises guaranteed by a cryp-
+       tosystem,  the  goal  of steganography is to hide messages
+       inside other harmless messages in  a  way  that  does  not
+       allow  any  enemy  to  even  detect that there is a second
+       secret message present" [Markus Kuhn].
+
+DESCRIPTION
+       StegParty is a system for  hiding  information  inside  of
+       plain-text  files.   Unlike similar tools currently avail-
+       able, it does not use random gibberish to encode  data  --
+       it  relies  on  small  alterations  to  the  message, like
+       changes to spelling and punctuation.  Because of this  you
+       can  use any plain-text file as your carrier , and it will
+       be more-or-less understandable after the secret message is
+       embedded.
+
+       StegParty  also  does  not  by  default  use whitespace to
+       encode data.  This is because whitespace-encoded  messages
+       are  too  easy  to  detect, and too easy to alter so as to
+       destroy the encoded message.  But since StegParty is  cus-
+       tomizable, you can add this feature if you want.
+
+       One  caveat:  because  these  are "small" alterations, the
+       amount of encoded data per unit of carrier text  is  typi-
+       cally  small.   For instance, a 4K binary file just barely
+       fits into Lewis Carroll's Through The Looking Glass.   You
+       can  improve on this by adding more rules, or writing more
+       text that takes advantage of these rules in your messages.
+
+       At the heart of StegParty is the rules file.  This defines
+       all the transformations that can occur on  the  plain-text
+       message,  called  a carrier file.  Each rule consists of a
+       rule type (whole word, literal, or expression) and  a  set
+       of  substitutions.  There can be arbitrarily many rules in
+       the rules file (up to the limits of  your  system  and  of
+       flex).
+
+       The  encoding process works like this: the carrier file is
+       scanned, and when a rule is  matched,  a  substitution  is
+       made  based  on  the  value x mod n, where x is the secret
+       message, and n is  the  number  of  substitutions  in  the
+
+
+
+0.2                        04 Nov 1999                          1
+
+
+
+
+
+STEGPARTY(1)                                         STEGPARTY(1)
+
+
+       current rule.  Then x is set to x/n, and the scanning con-
+       tinues until the secret message is exhausted, or until the
+       end-of-file is reached.
+
+       The  decoding  process  is  similar -- the encoded file is
+       scanned, and when a rule is matched,  the  program  deter-
+       mines  which substitution was made.  The index of the sub-
+       stitution times a factor f is added to the secret message.
+       The factor f starts at 1, and is multiplied by n (the num-
+       ber of substitutions) every time a rule is matched.
+
+       The default rules file encodes your text in the  style  of
+       the  average  Net-Lamer,  using  various  emoticons,  mis-
+       pellings, mangling of contractions, and  lame  alterations
+       such  as  "thanx"  and "l8ter".  It could be improved upon
+       using a suitable corpus, such as an IRC log.
+
+MAKING THE CODEC
+       To make the default encoder, just type  make.   This  will
+       make    a    binary   stegparty   using   the   rules   in
+       stegparty.rulez.  To build encoders with different  rules,
+       create  another  rules  file of the format <foo>.rulez and
+       then type make <foo>.
+
+       NOTE: The default Makefile requires GNU  Make,  so  you'll
+       need to type gmake or gnumake on some systems.
+
+THE RULES FILE
+       The  rules  file consists of rule definitions separated by
+       blank lines.  Each rule definition begins with a rule for-
+       mat string , and is followed by the substitutions for that
+       rule.
+
+       Let's look at an example rules file:
+
+       w
+       I'm
+       i'm
+       Im
+
+       wc
+       ain't
+       aint
+
+       l
+       K
+       |<
+
+       /("anks"|"anx")/[[:space:]]
+       anks
+       anx
+
+       //[[:alpha:]]!{1,4}/[[:space:]]
+       !
+
+
+
+0.2                        04 Nov 1999                          2
+
+
+
+
+
+STEGPARTY(1)                                         STEGPARTY(1)
+
+
+       !!
+       !!!
+       !!!!
+
+       The first rule is a whole word  rule,  because  the  first
+       line begins with a "w".  This means that the three strings
+       "I'm", "i'm", and "Im" will match a lone word, not as part
+       of  a substring (NOTE: see BWORD and EWORD in the lex file
+       for the definition of the boundaries of a word).
+
+       The second rule is also a whole word rule, but has the "c"
+       modifier, which means that it will also match the capital-
+       ized versions of the substitution  words.   Thus  "Ain't",
+       "Aint",  "ain't"  and "aint" will match, giving a total of
+       four substitutions.
+
+       The third rule is a literal "l" rule, which means it  will
+       match  anywhere  in  the  text, even inside of words.  Use
+       this rule with caution, it  can  be  tricky  to  implement
+       properly!
+
+       The  fourth  and fifth rule are expression rules, and they
+       take the form of one or two  slashes  followed  by  a  lex
+       expression.   The  first rule matches "anks" or "anx" fol-
+       lowed by whitespace, and the second rule  matches  between
+       one and four '!' characters with a letter on the left side
+       and whitespace on the right.
+
+       Note the additional slash before the  [[:space:]]  defini-
+       tion -- this means "match everything after this slash, but
+       leave it alone if you replace it".  Do a man  lex  if  you
+       need more elucidation.
+
+       In  the  fifth  rule,  we  have a double slash "//".  This
+       means "if you replace this string, leave the first charac-
+       ter  alone".   In  this  example,  we match the alphabetic
+       character, but don't want to replace  it.   Note  that  we
+       also  use  an  additional  slash  to  ignore  the trailing
+       whitespace.
+
+
+OPTIONS
+       -d          Decode  -  extract  data  from  a   previously
+                   encoded message.
+
+       -c          In  convert  mode,  specify  the  file  to  be
+                   encoded in the message.  Can be text,  usually
+                   will be binary.
+
+       -i          Specify  the input file -- the carrier file to
+                   be encoded or  decoded.   If  none  is  given,
+                   assumes stdin.
+
+       -o          Specify  the  output  file.   If  none  given,
+
+
+
+0.2                        04 Nov 1999                          3
+
+
+
+
+
+STEGPARTY(1)                                         STEGPARTY(1)
+
+
+                   assumes stdout.
+
+       -E          No Early-out - if  this  is  given  in  encode
+                   mode,  the  entire  carrier  file will be pro-
+                   cessed, even after the  program  runs  out  of
+                   data  to  encode.   The default behavior is to
+                   stop after data is exhausted.  Generally,  you
+                   want  to  use  this  for data encoded with the
+                   base27 command, or other data that  is  sensi-
+                   tive  to  trailing garbage.  You don't need it
+                   if you're encoding gzip'ed files.
+
+NOTES
+       The nature of  the  decoding  process  is  such  that  the
+       decoder  can't  tell when the end of the secret message is
+       reached -- it spews data until reaching  the  end  of  the
+       carrier  file.   If  you  encode  data  using  gzip,  this
+       shouldn't be a problem -- gzip ignores trailing garbage.
+
+       Because I'm lazy, I didn't use a big-integer library --  I
+       do  stuff in chunks of 32 bits, which means that there can
+       be some loss of efficiency when using rules with more than
+       two  substitutions  (which  is usually the case).  I could
+       have used glib++'s Integer class, but I don't like  mixing
+       annoying,  bureaucratic  C++  with  beautiful,  simple  C.
+       Maybe I'll do one in Haskell next.
+
+
+SEE ALSO
+       base27(1), pgp(1), gzip(1), bzip2(1)
+
+AUTHOR
+            Steven Hugg
+            hugg@pobox.com
+            http://pobox.com/~hugg/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0.2                        04 Nov 1999                          4
+
+

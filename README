@@ -1,0 +1,42 @@
+
+StegParty 0.2 README
+====================
+
+StegParty is a system for hiding information inside of plain-text files.
+For more information, read stegparty.txt and base27.txt.
+
+This software (except for the test/*.txt files) is under the GPL -- see the
+LICENSE file for more info.
+
+
+Prerequisites:
+
+- C compiler
+- flex
+- GNU Make
+- Perl
+- gzip (to run the tests)
+- a text editor (to edit the Makefile when things don't work ;-) )
+
+
+To get started:
+
+- Try this:
+
+	gmake
+	gmake test
+
+- You may have to alter the LIBS line in the Makefile, and the
+  "#!/usr/bin/perl" line in the scripts.  Also, you may not have
+  gmake (GNU Make).
+
+- Also try this:
+
+	echo "Secret message" | ./base27 > secret.txt
+	./stegparty -c secret.txt < my_email_msg.txt > encoded.txt
+	./stegparty -d < encoded.txt | ./base27 -d
+
+You'll have to provide your own "secret.txt" and "encoded.txt", of
+course...
+
+Be careful out there!

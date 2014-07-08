@@ -1,0 +1,675 @@
+*** Snapshot of #scoug at 06-28-99 19:34:57  ***
+*** DaveWgt
+ (dwatson@ts010d11.lax-ca.concentric.ne
+t) has joined #scoug [19:15:55]
+*** The topic for #scoug is: what's the
+ topic?
+*** Topic set by StevenL on Mon Jun 28
+ 19:00:27 1999
+*** Names on #SCOUG: DaveWgt charlie
+ StevenL rollin Sector @SCOUGbot 
+*** #SCOUG Mode is (+ )
+*** Created: Mon Jun 28 07:18:42 1999
+<rollin> Yes it is. Were finding that it's
+ varying wildly.  Some are picking it
+ up in an hour, others are taking
+ longer.
+<Sector> Hmmm, getting crowded in here
+<Sector> Why the change¨
+<DaveWgt> Great.  Hope we have some
+ problems!
+<rollin> New server, new location, more
+ bandwidth.  All good reasons!
+<Sector> Running low on capacity?
+<DaveWgt> Rollin, is the new server up?
+<StevenL> Growing bigger and stronger
+ every day...
+<rollin> Dave, yes it is.  The DNS change
+ is still working it's way through the
+ system.
+<rollin> Infact, let's do a group
+ experiment...
+<rollin> If everyone can open an OS/2
+ command line and run "host
+ www.scoug.com", I'm curious what the
+ result it.
+<rollin> it=is
+* Sector already did that
+<StevenL> sundial.sundialsystems.com =
+ 216.184.211.34
+<rollin> Sector passed with flying colors.
+<StevenL> Is that the new address Rollin?
+<Sector> Yup
+<rollin> Nope.
+<rollin> Opps, yes.  Sorry.
+* Sector jogs rollins memory
+<StevenL> It was a senior moment...
+<DaveWgt> I get .35
+<StevenL> Must be then secondary.
+<StevenL> then->the
+<rollin> Actually, Steve did you do
+ www.scoug.com or
+ www.sundialsystems.com?
+<StevenL> sundialsystems
+<StevenL> Oops.  I misread.  brb.
+<StevenL> www.scoug.com = 216.184.211.35
+<rollin> Great.
+<DaveWgt> Rollin, did you update my pages?
+  Last night they were old pages on
+ the new server.
+<DaveWgt> Looks current now
+<rollin> I grabbed them around 11:00 AM
+<rollin> Today.
+<Sector> Which TZ¨ ;>
+<DaveWgt> Everybody please notice:  we
+ rehosted the ISIG and Chat pages to
+ the new server.
+<DaveWgt> Used to be on deltanet.
+*** SteveS
+ (schiffman@slip-32-100-155-53.ca.us.ib
+m.net) has joined #scoug [19:22:40]
+* Sector got the message sent to the list
+*** maximum
+ (lmaxson@slip-32-101-147-117.ca.us.ibm
+.net) has joined #scoug [19:23:15]
+<StevenL> Hi Steve.
+<StevenL> Hi Maximum.
+<DaveWgt> welcome maximum and SteveS
+<maximum> Hi, all.
+<DaveWgt> We were remarking on the new
+ scoug server, new ISIG and Chat web
+ pages
+<SteveS> Hello all.
+<StevenL> Dave, the ISIG pages almost have
+ top billing now.  You're moving up.
+<DaveWgt> Note that our chat link has
+ "graduated" to an item on the main
+ menu bar
+*** CTCP PING (StevenL)
+<DaveWgt> Yeah, we're hoping folks won't
+ notice theother SIGs are a wee bit
+ out of date...
+<StevenL> You mean the Nov 97 meeting
+ topic?
+<maximum> I'm too new to chat.  What is a
+ chat web page?
+<SteveS> I got the message about the out
+ of date Network Sig web page......!
+<StevenL> max, it's nothing specific to
+ IRC.  It's just a page pointing out
+ where the chat sessions can be found.
+<StevenL> SteveS, I was referring to the
+ programming sig page.
+<DaveWgt> maximum, we have a web page,
+ linked from the scoug main page, that
+ tries to list chat events on a
+ variety of os2 interest groups
+<maximum> I see.
+<rollin> SteveL, are you volunteering?
+<DaveWgt> including this one, Internet
+ SIG, several VOICE events, and
+ Undernet
+<maximum> I see again.<g>
+<StevenL> Hummmm...
+<DaveWgt> Steve and Rollin, I'll be happy
+ to help with your postings if you
+ want to send me content.
+<StevenL> Let me think about that.  I
+ should learn HTML, but I've got lots
+ of alligators at the moment and I
+ don't play golf.
+<StevenL> Contents the problem for me.
+<DaveWgt> Actually, I think I sent Steve
+ some html couple months ago, he must
+ not have liked it...
+<rollin> Thanks.  It's one of those things
+ I never picked up from Terry.  I'll
+ redo the page this weekend.
+<StevenL> Who me?
+<DaveWgt> I think both sigs have a lot of
+ useful archive info to offer their
+ communities.
+<DaveWgt> ...Paul too (general sig)
+<DaveWgt> stevenl:  no, steves
+<maximum> Hate to hit and run, but I am in
+ Simi Valley with a need to head home
+ soon.
+<DaveWgt> Is everyone here subscribed to
+ the warpdoctor list??
+<DaveWgt> I think that will become a very
+ important helpdesk tool
+<StevenL> I am.  It's been quiet lately.
+<maximum> Maybe I will check in later,
+ much later.
+*** Signoff: maximum (Leaving) [19:33:44]
+<DaveWgt> goodnite max
+* Sector hopes so
+-=-=-=-=-=-=-=-=started log-=-=-=-=-=-=-=-=-=-
+06-28-99 19:35:01 *** Log Activated #scoug (D:\APPS\GTIRC\#scoug.log)
+06-28-99 19:36:26 <rollin> What's on tap for Wednesday?
+06-28-99 19:36:51 <DaveWgt> My main focus is what we'll do for Expo and Warpstock
+06-28-99 19:36:57 <DaveWgt> ISIG, that is
+06-28-99 19:37:22 <rollin> Good.  I'm trying to work the list of Internet presentations.  So, any input in that area would be great.
+06-28-99 19:37:32 <DaveWgt> also I want to poll on what the web page should do
+06-28-99 19:38:30 <DaveWgt> I don't think I'll have my web cam up yet.  Maybe this weekend.  We'll talk webcams next week
+06-28-99 19:39:10 <DaveWgt> also, I got a couple of stardock games, maybe we'll talk internet gaming in the next few meetings
+06-28-99 19:39:42 <rollin> Sounds like fun.  You might want to do a Warpcast level announcement for one or more of those.
+06-28-99 19:40:06 <DaveWgt> yeah, I really gotta get better at the promos.
+06-28-99 19:40:20 <DaveWgt> I'll never be as good as some other folks are, though...
+06-28-99 19:40:21 <rollin> Tonight's turnout is good, but I guess no one has problems!
+06-28-99 19:40:41 <DaveWgt> I wonder if people who have problems don't use the net, and vice versa??
+06-28-99 19:40:43 <StevenL> Sorta been that way.
+06-28-99 19:41:01 <StevenL> I think there's lots of sources...
+06-28-99 19:41:06 <DaveWgt> Maybe if we could get everyone on the net, problems would disappear
+06-28-99 19:41:21 <rollin> Obviously!
+06-28-99 19:41:27 <StevenL> We are here once a week.  Folks can hit TeamOS/2 or whatever anytime.
+06-28-99 19:41:55 <rollin> One spin we might try, although would be a little difficult on IRC, is to have some level of informational presentation or discussion prepared.  Similar to what we've done at live help desks.
+06-28-99 19:42:14 <DaveWgt> "how to"s
+06-28-99 19:42:50 <SteveS> The reason I was late to the chat tonight is that I was on the phone with a former OCIPUG member who just got a used PS/2 95 and wanted to know how to update the CPU to a newer version.
+06-28-99 19:43:21 <DaveWgt> pick a hot topic from teamos2help and expand on it.  We could advertise it on teamos2help and get some of their 300+ subscribers to come over
+06-28-99 19:43:44 <StevenL> Problem is most of the problems are boring, IMNSHO.
+06-28-99 19:44:10 <DaveWgt> yeah, but us with simpler minds are much more easily amused!
+06-28-99 19:44:10 <rollin> True.  And often very specific.
+06-28-99 19:44:32 <StevenL> By that I mean, if the person with the problem did a minimum of research, they would find the answer already written down somewhere.
+06-28-99 19:44:36 <DaveWgt> okay, 2 gurus are bored.  I'm still amused!
+06-28-99 19:44:56 <SteveS> Melanie just called from Costco. Said she was leaving having gotten the pictures developed/printed from this weekends Railfair '99 adventure. 
+06-28-99 19:45:24 <StevenL> What's a Railfair?
+06-28-99 19:45:29 <DaveWgt> I guess rail systems are kind of like networks...
+06-28-99 19:45:42 <Sector> Yeah, but it's usually easier (for them at least) to ask instead of spending time looking for an answer
+06-28-99 19:45:44 <rollin> They never work the way you plan?
+06-28-99 19:45:50 <rollin> When you need them the most they fail?
+06-28-99 19:46:05 <StevenL> The have very poor response to CSCD.
+06-28-99 19:46:26 <DaveWgt> CSCD?
+06-28-99 19:46:33 <SteveS> Like failing just after you cut your ISP provider over to a new service???
+06-28-99 19:46:34 <StevenL> Did I mess up my acronym.
+06-28-99 19:46:44 <StevenL> Carrier sense, collision detect.
+06-28-99 19:47:04 <StevenL> Not the best protocol for a railroad network.
+06-28-99 19:47:33 <DaveWgt> they;re more like a token ring
+06-28-99 19:47:47 <SteveS> Hey, the railnetwork I was at was powered by steam!
+06-28-99 19:48:03 <StevenL> Oh, a hot air system :)
+06-28-99 19:48:16 <SteveS> Really hot air.
+06-28-99 19:48:30 * Sector has lots of hot air comming out of some computers
+06-28-99 19:48:38 <StevenL> SteveS, do you hang out at the train store in Culver City?
+06-28-99 19:48:41 *** Blackbird (poznan@24.65.136.145.ab.wave.home.com) has joined #scoug [19:48:41]
+06-28-99 19:48:57 <StevenL> He's back.
+06-28-99 19:48:58 <Blackbird> hi there am I late¨
+06-28-99 19:48:59 <SteveS> Been there, but do not hang out at it.
+06-28-99 19:49:11 <Sector> Yup
+06-28-99 19:49:25 <Blackbird> what's the topic
+06-28-99 19:49:28 <StevenL> Peter was extolling it's virtues.  I pass by it now and then.
+06-28-99 19:49:35 *** The topic for #SCOUG is: what's a topic?
+06-28-99 19:49:45 *** The topic for #SCOUG is: Railroad Networks
+06-28-99 19:50:10 * Blackbird just look's dumbfounded
+06-28-99 19:50:31 <DaveWgt> we were wishing it was Help Desk, as advertised, but no one seems to need help
+06-28-99 19:50:35 <StevenL> That's OK.  As long as his system is working...
+06-28-99 19:51:05 <Blackbird> Well do I have a problem for you then¨
+06-28-99 19:51:09 <rollin> I'll bring this all together...
+06-28-99 19:51:10 <StevenL> I do have an unsolvable problem (unless I want to throw money at it).
+06-28-99 19:51:17 <StevenL> Yes.
+06-28-99 19:51:24 * Sector doesn't know, do you have a problem for us¨
+06-28-99 19:51:41 <rollin> I was installing to 3com 3c905 cards into one computer.  Whenever I loaded any protocol onto the second card, the first would stop failing.  
+06-28-99 19:51:43 <Blackbird> Stupid system took three trys to get up....trap "e"s
+06-28-99 19:52:00 <StevenL> Did you say "would stop failing"?
+06-28-99 19:52:20 <rollin> I loaded the diags, it specified that the cards were on different IRQs (even though the driver said the opposite).  So I let the diags reset the configuration.  Still no luck
+06-28-99 19:52:22 <StevenL> BB, blow hot air on it.
+06-28-99 19:52:23 <Sector> Thats what I heard (err, saw)
+06-28-99 19:52:39 <rollin> I then went into MPTS and set the ethernet address for each card.  Still no luck.
+06-28-99 19:52:50 <StevenL> Did you do the Alt-F1 thing?
+06-28-99 19:53:09 <StevenL> Sheesh, I mean, scan for new hardware.
+06-28-99 19:53:14 <rollin> The magic was to specify the PCI slot number (which was gleaned from the diags) and then everything worked well.  I didn't expect that much trouble from the 3com card and drivers.
+06-28-99 19:53:15 <Blackbird> alt F2 last time I tried it it started up
+06-28-99 19:54:24 <StevenL> Rollin, 3COM's OS/2 support is starting to wane IMO.
+06-28-99 19:54:52 <rollin> I was pleasantly surprised to see some performance enhancments in the latest driver - probably from WSOD.
+06-28-99 19:55:15 <rollin> Whenever I've tried to put two cards in one computer, I've always had troubles when they are the same brand/model.  The opposite of what I'd expect.
+06-28-99 19:55:27 <StevenL> Maybe I should go look again.  I'm running a 4/98 version.
+06-28-99 19:55:47 <rollin> I'm not saying I noticed a difference, it was a claim in the fix list.
+06-28-99 19:56:13 <StevenL> Oh.
+06-28-99 20:00:02 <StevenL> Actually, the slot number problem is pretty typical for PCI.  3COM even recommends the the 905's be installed in slot 1.  Then again, so does every other PCI card vender.  Go figure.
+06-28-99 20:02:50 <SteveS> One of the things you usually have to do when running adapter configuration/diagnostic programs and make a cfg change is turn off the computer, then back on for the newly stored in EEPROM/flash memory to be activated.
+06-28-99 20:03:21 <SteveS> You also usually have to run the diagnostics/configuration program from realy DOS.
+06-28-99 20:03:24 <rollin> Resetting the PCI configuration via the BIOS also yields results.
+06-28-99 20:03:52 <DaveWgt> can you get to the bios without restarting?
+06-28-99 20:04:01 <rollin> Nope.
+06-28-99 20:04:37 <SteveS> Since most of my cards are not PCI, don't have this option.
+06-28-99 20:06:16 <DaveWgt> i've upgraded most of my network cards to pci
+06-28-99 20:06:23 <SteveS> I received today a modem phone line tester that includes both polarity and over current detection. 
+06-28-99 20:06:55 <DaveWgt> I could have saved a modem with that.  Blew it up in a hotel
+06-28-99 20:07:14 * Sector had some DTK motherboards where you could get to the BIOS anytime, though you still had to reboot afterwards
+06-28-99 20:07:42 <DaveWgt> sector, I think I've had some Compaqs lile that
+06-28-99 20:08:39 <StevenL> I can get to the power save setting page while active, but that's all.
+06-28-99 20:09:58 <DaveWgt> StevenL, I'm going to start posting logs.  I figure about a month's worth is useful.  Do you have preference?
+06-28-99 20:12:05 <StevenL> That should be sufficient.
+06-28-99 20:13:27 <rollin> Dave, if you put them in a subdirectory, we can make them searchable.
+06-28-99 20:13:46 <Blackbird> I guess time's up...or is there an hour timelimit...
+06-28-99 20:13:55 <DaveWgt> chat/logs
+06-28-99 20:14:11 <DaveWgt> format will be ddmmmyy.txt
+06-28-99 20:14:14 <StevenL> BB, have you been waiting with a question?
+06-28-99 20:14:17 <rollin> Sounds good.  I'll setup the database and the script.
+06-28-99 20:14:42 <Blackbird> Just my boot trap "e" problem...
+06-28-99 20:15:16 <DaveWgt> I'll let the logs stack up unless we need to free some space, but only have last 4 linked from the chat page
+06-28-99 20:15:28 <Sector> In theory it's 07:00pm-08:00pm (PDT) but in practice thats rarely enforced
+06-28-99 20:15:47 <rollin> We're Ok on space.
+06-28-99 20:18:00 <StevenL> BB, have you tried reducing the MB bus speed?
+06-28-99 20:18:13 <StevenL> Or the CPU clock speed?
+06-28-99 20:18:20 <rollin> BB, if you do an ALT-F2, what is the last driver to load before the Trap?
+06-28-99 20:18:28 <Blackbird> Back to 66 back to 100 no difference
+06-28-99 20:19:40 <DaveWgt> I gotta go out for a while, but I'll stay connected to get the logs.
+06-28-99 20:19:41 <Blackbird> It stops the list at a video driver KMGAX64.SYS but there seams to be a lot of disk activity after this last listed driver
+06-28-99 20:20:10 <rollin> Is this right before the WPS should load?
+06-28-99 20:20:18 <Blackbird> yes
+06-28-99 20:20:57 <rollin> Did this just start all of the sudden?  
+06-28-99 20:21:25 <rollin> Does it say a TRAP E occurred in XXXXX module?
+06-28-99 20:21:50 <Blackbird> been happening for the last 5-6 months...before that no problem.....did put a new matrox video card in though...
+06-28-99 20:22:15 <StevenL> BB, when did you mention this to us?
+06-28-99 20:22:40 <Blackbird> about at least a month or so ago
+06-28-99 20:22:51 <rollin> I would start by returning to standard VGA.  I'm 99% sure that will fix it.  At that point I'd try to reinstall the video drivers you have.  Or if you're feeling brave, download the current Matrox drivers.
+06-28-99 20:22:58 <StevenL> Must have forgotten.  Did we suggest you try another video card?
+06-28-99 20:23:03 <SteveS> Matrox has had quite a few updates to their video driver.
+06-28-99 20:23:33 <SteveS> Current version is 2.22.078
+06-28-99 20:23:40 <Blackbird> Have reinstalled video a couple of times...have the lastest driver
+06-28-99 20:24:12 <StevenL> Rollin's suggesting plain VGA to see if it's driver related.  Did we try this already?
+06-28-99 20:24:20 <Blackbird> no
+06-28-99 20:24:20 * Sector has 2.23.082
+06-28-99 20:24:42 <StevenL> I would try it.
+06-28-99 20:24:58 <Blackbird> I have 2.23.082 as well
+06-28-99 20:25:33 <StevenL> I've heard some folks have had to backup .082.  However, it's unlikely, that this is your problem.
+06-28-99 20:25:42 <StevenL> .082 is too new.
+06-28-99 20:25:48 * Sector thinks SteveS's "Current version" isn't the current version...
+06-28-99 20:26:25 <SteveS> My version works!
+06-28-99 20:27:10 <Blackbird> So if trying standard VGA mode for a while and I get no trap "e" waht would I do next...use an older driver...
+06-28-99 20:27:21 <Sector> Never said it didn't.  You stated: "<SteveS> Current version is 2.22.078" though
+06-28-99 20:27:39 * Sector doesn't get a trap "e" with almost the same card
+06-28-99 20:28:07 <Blackbird> I don't get the trap EVERY time I boot thought
+06-28-99 20:29:44 <StevenL> BB, to me that says there's something marginal in your system.  It could just be a video driver bug, but you never know with these things until you test all the possibilities.
+06-28-99 20:30:24 <StevenL> BTW, is the Matrox a replacement for another brand of card?
+06-28-99 20:30:31 <Sector> Yup
+06-28-99 20:31:01 <Blackbird> Had an ELSA Office 2000 before
+06-28-99 20:32:42 <StevenL> Unless there are remnants of the ELSA drivers left over, I'd still suspect the card.
+06-28-99 20:33:12 <Blackbird> It's an AGP card as well
+06-28-99 20:33:30 <StevenL> True, but it's not the same card :)
+06-28-99 20:34:09 <Blackbird> The ELSA was a PCI
+06-28-99 20:34:28 <StevenL> Did it fail, or do you still have it?
+06-28-99 20:34:47 <Sector> STill has it
+06-28-99 20:34:56 <Blackbird> I still have it in the little woman's widoze machine
+06-28-99 20:35:20 <StevenL> Can you steal it back for a while?  Or is that a near death experience?
+06-28-99 20:35:49 <Blackbird> No near death just APITA
+06-28-99 20:36:33 <StevenL> Then you might survive.  I only ask because my wife's working on her 2nd' degree blackbelt.
+06-28-99 20:37:16 <Blackbird> Be very carefull about what you ask for Steve....
+06-28-99 20:37:20 <StevenL> Anyway, why not reinstall it and boot a couple of dozen times.  Would that be enough to ensure a trap on your current setup.
+06-28-99 20:37:50 <StevenL> I'm pretty durable.  I've survived for 20 years :)
+06-28-99 20:37:58 <Blackbird> So does that make it a hardware or a software problem
+06-28-99 20:38:13 <StevenL> Could be either.
+06-28-99 20:38:30 <Blackbird> Exactly my point...no furhter ahead
+06-28-99 20:38:58 <StevenL> I lean towards hardware only because I haven't complaints similar to yours elsewhere.
+06-28-99 20:39:33 <StevenL> There have been complaints about the Maxtrox drivers, but they seem to be redraw failures not out and out system crashes.
+06-28-99 20:39:50 <Blackbird> Does any of the TRAP screen full of data indicate one or the other
+06-28-99 20:40:28 <StevenL> To me, trap E's or more often than not hardware.  Rollin may disagree.
+06-28-99 20:40:40 <rollin> I'd say 50-50.
+06-28-99 20:41:01 <StevenL> Trap D's are typically software.
+06-28-99 20:41:02 <Blackbird> I have been recording the screens for the last 8 failures
+06-28-99 20:41:30 <StevenL> Are the CS:EIP values always the same?
+06-28-99 20:41:43 <Blackbird> yes
+06-28-99 20:42:15 <Blackbird> CRO has changed between two values
+06-28-99 20:42:58 <Blackbird> and the line begining FS  has had two values
+06-28-99 20:44:36 <StevenL> It's hard to know what's going on without driver source.  Have you ever asked Matrox what the failure indicates?  That is assuming the failure address in inside the driver.
+06-28-99 20:45:09 <StevenL> Oh BTW, what video resolution are you running at?
+06-28-99 20:51:51  Connection Closed [20:51]
+06-28-99 21:36:51 *** Log Terminated.
+
+*** Snapshot of #scoug at 07-07-99 19:14:13  *** 
+*** Sector (andreww@03-158.015.popsite.net) has joined #scoug 
+ [18:07:09] 
+*** The topic for #scoug is: SCOUG Internet SIG meeting 
+*** Topic set by SCOUGbot on Wed Jul  7 17:24:54 1999 
+*** Names on #SCOUG: Sector SCOUGbot westwind  
+*** #SCOUG Mode is (+ ) 
+*** Created: Wed Jul  7 06:31:19 1999 
+*** The topic for #SCOUG is: Internet SIG meeting Wednesday night 
+ @07:00pm PDT, 02:00 GMT (Thursday morning) 
+*** nnnn (raennnn@slip166-72-80-33.ca.us.ibm.net) has joined #SCOUG 
+ [18:33:23] 
+*** SteveS (schiffman@slip166-72-208-137.ca.us.ibm.net) has joined 
+ #scoug [18:56:40] 
+<Sector> Hello 
+<SteveS> Good evening. 
+<Sector> Where be Dave¨ 
+*** maximum (lmaxson@slip-32-100-150-162.ca.us.ibm.net) has joined 
+ #scoug [18:59:39] 
+<Sector> And another wanders in 
+<SteveS> By my clock, Dave still has 45 seconds before the begining 
+ of the ISig chat. 
+<maximum> Well, that sounds like another project. 
+<SteveS> I'll bet the excuse tonight will be that he was having 
+ trouble getting into his ISP! 
+* Sector thinks Dave is late 
+<maximum> Has anyone ever heard from westwind? 
+<Sector> Yup 
+<Sector> Most of the time though westwind isn't blowing 
+<maximum> Must have a great ISP. 
+<Sector> Dave or westwind¨ 
+*** StevenL (steve53@sfr-pci-pqs-vty16.as.wcom.net) has joined 
+ #scoug [19:04:52] 
+<StevenL> Hello. 
+<Sector> One more 
+<StevenL> Yep.  It wasn't easy.  Earthlink appears to have DNS 
+ problems.  I came in through Compuserve's PPP gateway. 
+<maximum> Dave still has me appearing on the 15th instead of the 
+ 12th for the VOICE-sponsored session. 
+* Sector sends out search parties to look for Dave 
+<StevenL> Yeah, where's the boss? 
+<Sector> The #voice topic just got changed to show Compuserve 
+<maximum> Is there more? 
+<Sector> More what¨ 
+<maximum> Show CompuServe? 
+<Sector> To reflect the change to the Compuserver forum for the 
+ speakup 
+<maximum> I don't want to be the last to know. 
+<StevenL> Where's Mr. Bot? 
+<Sector> He's right here 
+<maximum> Does the change mean I can't use this prodict, GTIRC? 
+<StevenL> Why no @SCOUUGbot? 
+<StevenL> You are using it.  What you do mean? 
+<Sector> non Compuserve members will have to use a Java interface 
+ for the Speakup.  But GTIRC is quite usable for anything on 
+ WEBBnet 
+<SteveS> SCOUGbot is here. It just does not have operator privledges 
+ or something that the @ signifies. 
+<Sector> Probably last time SCOUGbot left then came back the channel 
+ was already here so SCOUGbot didn't automatically get the @ 
+<maximum> If the VOICE speakup has been moved to CompuServe, will 
+ GTIRC allow access? 
+<StevenL> Oh. 
+<StevenL> Lynn, I suspect we confused you.  Let's rewind. 
+* Sector presses the rewind button 
+<maximum> OK 
+<StevenL> <<<<<<<<<<<<<<<<<<<<<<<<------------------------- 
+<StevenL> BOT 
+<StevenL> We're there. 
+<Sector> Oops, forgot to stop we went past the end of the tape 
+<maximum> Play. 
+<StevenL> That's the BOT marker.  We're fine. 
+*** DaveWgt (dwatson@ts046d03.lax-ca.concentric.net) has joined 
+ #scoug [19:13:03] 
+----------
+07-07-99 19:28:41 *** Log Activated #scoug (D:\APPS\GTIRC\#scoug.log)
+07-07-99 19:28:47 <Sector> Welcome
+07-07-99 19:28:48 <DaveWgt> late again...
+07-07-99 19:28:55 * Sector noticed that
+07-07-99 19:29:00 <maximum> Hi, Dave.
+07-07-99 19:29:06 <StevenL> Hi.
+07-07-99 19:29:13 <DaveWgt> Gettin anything done?
+07-07-99 19:29:22 <DaveWgt> Did anyone log what I missed?
+07-07-99 19:29:26 <Sector> Umm, well we rewound
+07-07-99 19:29:30 <DaveWgt> Did anyone log Monday?
+07-07-99 19:29:38 <StevenL> Yes.
+07-07-99 19:29:45 <StevenL> Mostly chat.
+07-07-99 19:29:47 <maximum> Just trying to get you to change the Warpicity speakup from July 15th to the 12th.
+07-07-99 19:29:52 <DaveWgt> Chat's good.
+07-07-99 19:30:31 <DaveWgt> hmmm... I don't know how they schedule those.
+07-07-99 19:30:47 <DaveWgt> If I'm not their newest member, I'm close.
+07-07-99 19:31:00 <maximum> They scheduled it correctly.  You have listed incorrectly.
+07-07-99 19:31:30 <DaveWgt> whoops.  I'll fix it.
+07-07-99 19:32:03 <maximum> Now straighten me out about which IRC software works with what.
+07-07-99 19:32:18 <StevenL> It's all compatible.
+07-07-99 19:32:19 <Sector> Typically VOICE speakups are normally scheduled for 08:00pm EDT, 05:00pm PDT on Monday nights.  Just check there schedule of events over on the VOICE website
+07-07-99 19:32:31 <StevenL> bbiab...
+07-07-99 19:32:34 *** StevenL has left #scoug [19:32:34]
+07-07-99 19:32:38 <Sector> IRC clients will work with any standard IRCD server
+07-07-99 19:33:05 <Sector> But Compuserve doesn't do things that way.  Non Compuserve members have to go through there Java interface
+07-07-99 19:33:33 <maximum> Thank you, sector.
+07-07-99 19:34:03 <DaveWgt> VOICE calendar says Jul 12 Speakup topic is "TBA"
+07-07-99 19:34:20 <maximum> That leaves me in a bit of a quandry.
+07-07-99 19:34:42 <maximum> TBA for the 12th is Warpicity.
+07-07-99 19:35:27 <DaveWgt> I'll remind them.  Also, I'll add a day to my schedule as well as date, to serve as a "check bit."
+07-07-99 19:35:40 *** StevenL (steve53@sfr-pci-pqs-vty23.as.wcom.net) has joined #scoug [19:35:40]
+07-07-99 19:35:48 <Sector> Maybe due to the change over to Compuserve it's been changed it wasn't TBA before
+07-07-99 19:36:15 <maximum> Larry Finkelstein has somehow switched things over to the CompuServer (if I have that right).
+07-07-99 19:37:44 <DaveWgt> Are you saying we can join Compuserve chats?
+07-07-99 19:37:48 <maximum> As some of you know I have been practicing this chat like crazy.  Now they have switched software on me.
+07-07-99 19:37:52 <DaveWgt> ...or vice versa?
+07-07-99 19:38:41 <maximum> Apparently you need a browser and download a java applet on connecting.
+07-07-99 19:39:05 <maximum> Whatever it is, it does not appear to be GTIRC.
+07-07-99 19:39:51 <Sector> Check the #voice topic for the URL
+07-07-99 19:40:35 <maximum> I am a CompuServe member, but I am going to have to connect as non-CompuServe.
+07-07-99 19:40:52 <Sector> Why non-Compuserve if your a member?
+07-07-99 19:40:53 <DaveWgt> What are you connecting to?
+07-07-99 19:41:50 <maximum> The CompuServe chat support is Windows only, except for OS2-CIM. 
+07-07-99 19:42:14 <Sector> Figures
+07-07-99 19:42:15 <DaveWgt> I have AOL accounts.  Since AOL bought Compuserve, is there any benefits sharing, or are they kept separate?
+07-07-99 19:42:40 <DaveWgt> Has the os2-cim been updated lately?
+07-07-99 19:42:57 <StevenL> Not since about 3 years ago.
+07-07-99 19:43:04 <StevenL> It's still a pig.
+07-07-99 19:43:22 <maximum> I don't want to experiment on the night of the speakup.
+07-07-99 19:43:51 <Sector> Dave, did you get the missed.txt?
+07-07-99 19:43:55 <StevenL> I lied. 4 years ago.
+07-07-99 19:44:05 <StevenL> Where's the applet to be found?
+07-07-99 19:44:12 <Sector> Well, you did say "about" so we'll let is slide
+07-07-99 19:44:48 <maximum> You go to go.compuserve.com and select chat.
+07-07-99 19:45:12 <StevenL> OK.  It's thinking about something.
+07-07-99 19:45:55 <StevenL> It's a 370K applet.  I think.
+07-07-99 19:46:25 <DaveWgt> I'm at compuserve, don't see chat.  Forums the same thing?
+07-07-99 19:46:33 <StevenL> No.
+07-07-99 19:46:42 <StevenL> It's the button to the right of Files.
+07-07-99 19:47:07 <StevenL> Still downloading....
+07-07-99 19:47:31 <StevenL> Working....
+07-07-99 19:48:00 <Sector> Try: http://go.compuserve.com/os2central
+07-07-99 19:48:20 <StevenL> I'm in the chat room.  Where's everyone else?  I guess, I'm early.
+07-07-99 19:49:06 <Sector> That chat isn't until Monday @05:00pm PDT...
+07-07-99 19:49:18 <StevenL> Dontcha just love being warned that you are in an applet window.
+07-07-99 19:49:40 <StevenL> I know that.  Somehow, I expected others the test there ability to get in before then.
+07-07-99 19:49:54 <DaveWgt> I'm working on it.
+07-07-99 19:50:03 * Sector is still waiting.  Slow connection at the moment
+07-07-99 19:50:05 <StevenL> Also, why there and not Webbnet?
+07-07-99 19:50:19 <Sector> You know what, I asked that same question
+07-07-99 19:50:28 <StevenL> It's a big download.  Also, CIS is not a speed deamon.
+07-07-99 19:50:30 <DaveWgt> What's going to be there?  (compuserve)
+07-07-99 19:50:45 <maximum> I can't even find the file section with the button next to it.
+07-07-99 19:50:52 <Sector> "<madodel> Because they asked
+07-07-99 19:50:52 <Sector> <madodel> This is a one time event.  VOICE is co-sponsoring it on
+07-07-99 19:50:53 <Sector>  the OS/2 Forum on Compuserve
+07-07-99 19:50:53 <Sector> <madodel> Non-Compuserve members will have to use a java app to
+07-07-99 19:50:54 <Sector>  access."
+07-07-99 19:50:57 <Sector> That was the answer I got
+07-07-99 19:51:10 <maximum> It was originally Webbnet.
+07-07-99 19:52:09 <DaveWgt> We need some instructions.
+07-07-99 19:52:12 <StevenL> Sheesh.  Larry can't even get CIS to allow him to provide a key thingee to allow members to get full web access.  Why this?
+07-07-99 19:52:33 <StevenL> By members I mean members using OS/2 browsers.
+07-07-99 19:53:00 <StevenL> Do you have the OS/2 Center main window up?
+07-07-99 19:53:16 <Sector> Who
+07-07-99 19:53:20 <StevenL> Yo Dave.
+07-07-99 19:53:41 <StevenL> Anybody then :)
+07-07-99 19:53:46 * Sector does
+07-07-99 19:54:13 <StevenL> Sector, do you have a Chat button?
+07-07-99 19:54:18 <Sector> Yup
+07-07-99 19:54:22 <DaveWgt> I tried go.compuserve.com/os2central and got bounced to forumusa.compuserve.com and then "not found"
+07-07-99 19:54:25 <maximum> I can't get to os2central.
+07-07-99 19:54:48 <StevenL> Lynn, where are you then?
+07-07-99 19:55:02 <maximum> I get www.compuserve.com/gateway/default.asp
+07-07-99 19:55:06 <Sector> Well, I got bounced to http://forumsa.compuserve.com/gvforums/default.asp?srv=os2central
+07-07-99 19:55:17 <StevenL> That's the correct place.
+07-07-99 19:55:57 <maximum> Then where did you find chat?
+07-07-99 19:56:15 <StevenL> First line reads OS/2 Central Forum...
+07-07-99 19:56:40 <StevenL> Below that are buttons:  Messages, Files, Chat.  The Chat button is smaller.
+07-07-99 19:57:19 <StevenL> Lynn, what version of what browser are you using?
+07-07-99 19:58:00 * Sector is using Netscape Navigator 4.04
+07-07-99 19:58:15 <StevenL> I'm using 2.02 (old reliable <g>).
+07-07-99 19:58:37 <StevenL> Sector, do you have any buttons showing?
+07-07-99 19:58:49 <maximum> NS4.04, latest update.
+07-07-99 19:58:51 <Sector> Yup
+07-07-99 19:59:01 <StevenL> Which ones?
+07-07-99 19:59:07 * Sector would be using WebExplorer 1.2 but alas, it doesn't support Java
+07-07-99 19:59:32 * Sector has a small chat button upper left area of the screen
+07-07-99 20:00:00 * StevenL I'm going to put up Lynx for reading HTML-ized documentation.
+07-07-99 20:00:35 <StevenL> FWIW, I'm running Java 1.1.7 not the 1.1.8 beta.
+07-07-99 20:00:45 * Sector is also running 1.1.7
+07-07-99 20:01:00 <StevenL> Tell NS to reload the page.  Maybe that's the problem.
+07-07-99 20:03:30 <StevenL> Helllllloooooo out there.....
+07-07-99 20:03:38 *** CTCP PING (StevenL) (#scoug)
+07-07-99 20:03:41 <Sector> Hellllloooooo in there
+07-07-99 20:04:07 <StevenL> Any luck.  I've got the CIS chat all to myself.
+07-07-99 20:04:37 <Sector> Me was waiting and waiting and waiting while it ever so slowly loaded then Netscape just gave me that wonderful SYS3175
+07-07-99 20:04:55 <Sector> My connection has been very slow all day (most of the time the modem isn't doing a single thing)
+07-07-99 20:04:56 <StevenL> Got 2.02? <g>
+07-07-99 20:05:20 <Sector> I did have, but after it wouldn't even start I deleted it
+07-07-99 20:05:40 *** Signoff: maximum (Ping timeout) [20:05:39]
+07-07-99 20:06:25 <StevenL> Typical YMMV.  2.02 crashes perhaps once a week here if that.
+07-07-99 20:06:49 <Sector> It used to work here, then everytime time tried to start it it would just crash.
+07-07-99 20:07:31 <StevenL> Did you know NS changes it's icon in the Window List when it's running Java?
+07-07-99 20:07:49 * Sector wishes Netscape wouldn't grab 100% of the CPU
+07-07-99 20:08:05 * Sector doesn't have any icons in his window list
+07-07-99 20:08:28 <StevenL> Ooops.  Or maybe OD is doing it.
+07-07-99 20:08:46 <DaveWgt> Sector - I got your "missed" file.  Thanks.
+07-07-99 20:09:07 <Sector> Your welcome, I just did a /snap missed.txt
+07-07-99 20:09:59 <DaveWgt> I'm stumped.  I got to the os2central page, prompt for the Chat button says I have Java disabled.  My prefs (404) says Java enabled.
+07-07-99 20:10:28 *** maximum (lmaxson@slip-32-100-150-2.ca.us.ibm.net) has joined #scoug [20:10:28]
+07-07-99 20:10:32 <Sector> What version?
+07-07-99 20:10:52 <Sector> (Java that is)
+07-07-99 20:11:52 <DaveWgt> I think I'm 202.  Checking syslevel
+07-07-99 20:11:59 <DaveWgt> 1.02, that is
+07-07-99 20:12:32 <Sector> Madodel said he thought you needed at least Java 1.1.6
+07-07-99 20:13:09 <maximum> Well, I got in, dowloaded the applet, only to discover that as a speaker I have no way of directing a response.
+07-07-99 20:13:51 <maximum> I don't believe this.
+07-07-99 20:14:15 <maximum> It was all in place until Larry changed things.
+07-07-99 20:14:46 <maximum> That leads me to believe that Saturday morning is our best shot.
+07-07-99 20:15:04 *** StevenL has left #scoug [20:15:04]
+07-07-99 20:15:37 *** StevenL (steve53@sfr-pci-pqs-vty23.as.wcom.net) has joined #scoug [20:15:37]
+07-07-99 20:15:54 <StevenL> Now where were we?
+07-07-99 20:16:23 <maximum> It's my turn to leave.  Hope some of you can make the Saturday 6am session.
+07-07-99 20:16:29 *** Signoff: maximum (Leaving) [20:16:28]
+07-07-99 20:17:35 <Sector> Lost in space perhaps?
+07-07-99 20:20:05 <SteveS> Lynn schedules a chat session at 6am Sat morning. No way I will be there at that time.
+07-07-99 20:20:25 <Sector> Actually it was more like Dave scheduled...
+07-07-99 20:20:46 <SteveS> And I was thinking that Dave's schedule for 8am PDT was early for Saturday.
+07-07-99 20:21:03 <Sector> That's what I thought too
+07-07-99 20:21:29 <StevenL> He's got this idea that I will allow the European and Oz folks to join in.
+07-07-99 20:21:44 <Sector> Do you allow?
+07-07-99 20:22:16 <DaveWgt> Yeah, look at the map.  It's the only halfway decent hour for everywhere but the pacific ocean.
+07-07-99 20:22:43 <DaveWgt> hey, it's an experiment, okay?
+07-07-99 20:23:34 <SteveS> OK.
+07-07-99 20:23:35 * Sector wonders about some of these experiments
+07-07-99 20:23:36 <StevenL> I like experiments.  I just annoyed at CIS.
+07-07-99 20:23:42 <StevenL> I -> I'm.
+07-07-99 20:23:43 <DaveWgt> And anybody can't set their alarm and get up and support Lynn must be getting pretty old
+07-07-99 20:23:58 <StevenL> I resemble that remark.
+07-07-99 20:24:00 <DaveWgt> Where did they announce the CIS change?
+07-07-99 20:24:10 <StevenL> I thought you did it.
+07-07-99 20:24:11 <DaveWgt> I expect lots of folks will go to webbnet.
+07-07-99 20:24:17 <SteveS> I thought you set the Saturday chat for 8am PT?
+07-07-99 20:24:29 <DaveWgt> 6am
+07-07-99 20:24:35 <Sector> The CIS is for the VOICE speakup on Monday
+07-07-99 20:24:38 <DaveWgt> but not compuserve
+07-07-99 20:24:57 <DaveWgt> yeah, where did they announce that change?  (sat is on webbnet)
+07-07-99 20:25:27 <Sector> madodel changed the #voice topic while I was in there, a little before this chat got started.  Thats the only place I've seen it mentioned
+07-07-99 20:27:05 *** nnnn has left #SCOUG [20:27:05]
+07-07-99 20:30:34 <StevenL> Dave, are you coming over to the CIS chat anytime soon?
+07-07-99 20:30:46 <Sector> Dave needs to upgrade his Java
+07-07-99 20:31:03 <DaveWgt> I'm working it
+07-07-99 20:31:08 <StevenL> What's he got?  1.0.2?
+07-07-99 20:32:09 <Sector> 1.02 was what he said
+07-07-99 20:32:33 <Sector> Well, actually he said 202 the first time...
+07-07-99 20:32:47 <StevenL> Here I thought, I was conversative running 2.02...
+07-07-99 20:33:24 <Sector> Hey, I'm still running WebExplorer 1.2
+07-07-99 20:35:00 * Sector doens't think to much of CIS's java chat...
+07-07-99 20:35:35 <StevenL> I use it at time for documentation reading.  It's faster.  That's why I mentioned installing Lynx.
+07-07-99 20:37:41 <DaveWgt> I gotta reboot.  brb
+07-07-99 20:37:51 <Sector> Why reboot?
+07-07-99 20:37:54 <DaveWgt> somebody log for a few minutes?
+07-07-99 20:38:01 *** Log Terminated.
+07-07-99 20:43:40 *** Log Activated #scoug (D:\APPS\GTIRC\#scoug.log)
+07-07-99 20:43:57 <DaveWgt> I'm logging.  Miss much?
+07-07-99 20:43:58 <Sector> Not much of a log:
+07-07-99 20:44:00 *** StevenL (steve53@pool091-max3.ds36-ca-us.dialup.earthlink.net) has joined #scoug [20:44:00]
+07-07-99 20:44:01 <SteveS> Fast reboot.
+07-07-99 20:44:03 <Sector> *** Signoff: StevenL (Read error: 104 (Connection reset by peer))
+07-07-99 20:44:04 <Sector>  [20:26:02]
+07-07-99 20:44:05 <Sector> <SteveS> Geezzz. Almost everybody left.
+07-07-99 20:44:05 <Sector> <Sector> Looking that way
+07-07-99 20:44:05 <Sector> <Sector> Was it something we said¨
+07-07-99 20:44:06 <Sector> <SteveS> And we have not even mentioned the topics that Dave
+07-07-99 20:44:06 <Sector>  proposed for tonight. 
+07-07-99 20:44:07 <Sector> <Sector> Hmmm, I guess we lost them somewhere along the way
+07-07-99 20:44:42 <StevenL> Lost my dial up.  But Earthlink's back up.
+07-07-99 20:46:15 <Sector> So where did tonight's topics go¨
+07-07-99 20:46:48 <DaveWgt> ok, I'm downloading a 211k file
+07-07-99 20:47:05 <StevenL> Dave, which one?
+07-07-99 20:47:16 <DaveWgt> Actually, I don't think I got any topics posted.  Busy weekend.
+07-07-99 20:47:28 <Sector> Yes you do
+07-07-99 20:47:33 <DaveWgt> sorry bout that
+07-07-99 20:48:00 <Sector> Focus on WarpExpo and WarpStock internet presentations, Discussion of web cams, Start discussing internet games
+07-07-99 20:48:23 <DaveWgt> Hey.  Nobody is in the warpicity forum!
+07-07-99 20:48:33 <DaveWgt> ... but at least I got it up.
+07-07-99 20:48:36 <Sector> Nope we all left
+07-07-99 20:48:42 <StevenL> We got tired of waiting.
+07-07-99 20:48:56 <Sector> Reboot to activiate a newer Java?
+07-07-99 20:49:03 <DaveWgt> So, the plan is to meet there Monday afternoon??
+07-07-99 20:49:05 <StevenL> I still want to know why.
+07-07-99 20:49:16 <DaveWgt> Yeah, I upped to 117
+07-07-99 20:49:17 <Sector> 05:00pm PDT
+07-07-99 20:49:26 <DaveWgt> I can't tell you why
+07-07-99 20:49:38 <StevenL> It's a Zen question.
+07-07-99 20:49:57 <Sector> Well, I gave you the answer I got
+07-07-99 20:50:18 <DaveWgt> I'm guessing it's an attempt to broaden our population.
+07-07-99 20:50:34 <DaveWgt> if we can get compuserve folks aboard, it could grow us a lot.
+07-07-99 20:50:45 <DaveWgt> Are there a lot of compuserve os2'ers?
+07-07-99 20:51:07 <StevenL> Oh, you mean to folks who supply a 4 year old CIMOS/2 and no OS/2 native RPA client.  Sure...
+07-07-99 20:51:49 <DaveWgt> If the applet forum is available all the time we could hijack the forum.
+07-07-99 20:51:50 <StevenL> There used to be very active OS/2 forums.  CIS basically chased everyone away by non response.
+07-07-99 20:52:08 <StevenL> Yeah, I really want to be known as Guest-X.
+07-07-99 20:52:15 <DaveWgt> Webbnet has a java applet available don't they?
+07-07-99 20:52:19 <DaveWgt> I haven't tried it.
+07-07-99 20:52:23 <Sector> Better, move them over here
+07-07-99 20:52:35 <DaveWgt> mandie told me it was broken, then it was fixed.
+07-07-99 20:52:40 <Sector> Yup Java IRC clients are available.  There are several that link to WEBBnet
+07-07-99 20:52:55 <StevenL> Also, for most of what CIS still offers for OS/2,  GCP is a better tool.
+07-07-99 20:52:57 <DaveWgt> If compuserve is like aol, they can run any tcpip apps.
+07-07-99 20:53:16 <StevenL> Dave, go find and RPA client for OS/2.
+07-07-99 20:53:19 <DaveWgt> aol is like an isp with a fancy members-only portal
+07-07-99 20:53:20 <Sector> What was broken?
+07-07-99 20:53:31 <DaveWgt> something about a security bug, iirc
+07-07-99 20:53:32 <StevenL> You need to read up a bit <g>.
+07-07-99 20:53:40 <Sector> Oh, the one I found...
+07-07-99 20:53:41 <StevenL> Not a bug.
+07-07-99 20:53:56 <StevenL> What did Sector find?
+07-07-99 20:53:59 <DaveWgt> what's rpa?
+07-07-99 20:54:26 <StevenL> The Windows only client add-in that allows you full access to CIS from the Web.
+07-07-99 20:54:46 <DaveWgt> ... for members?
+07-07-99 20:54:49 <Sector> When we where testing the Java client, I manage to get it to identify me as Judy and it VoiceBot gave me channel operator status
+07-07-99 20:55:10 <DaveWgt> and you TOLD her?
+07-07-99 20:55:23 <StevenL> Interesting.  It didn't show up on the lists I was watching.
+07-07-99 20:55:28 <DaveWgt> ok, it was the right thing to do...
+07-07-99 20:55:41 <Sector> Well, it was kinda hard to hide it since as soon as I joined the channel VoiceBot gave it to me
+07-07-99 20:56:24 <StevenL> Sector, you are talking about the Java IRC client from IBM?
+07-07-99 20:56:33 <DaveWgt> I gotta get some supper, then start promoting Saturday and Monday.  
+07-07-99 20:56:43 <StevenL> See ya.
+07-07-99 20:56:54 <DaveWgt> I'll try to get up to speed on the agenda topics before next wednesday.
+07-07-99 20:57:01 <DaveWgt> tonight has been useful, though.
+07-07-99 20:57:01 <Sector> The problem came from VoiceBot automatically giving ops status to people when the joined (assuming it identified you as supposed to have it anyway)
+07-07-99 20:57:09 <Sector> Yes the IBM Java IRC client
+07-07-99 20:57:41 <DaveWgt> I'll leave the line up to collect logs as long as you folks are here.  See ya in a bit, maybe
+07-07-99 20:57:49 <StevenL> Is what you found a client bug or a server bug?
+07-07-99 20:58:01 <StevenL> Bye, dave.
+07-07-99 20:58:46 <Sector> Well, the client shouldn't have identified my as Judy.  It was due to the client running on Judy's server.
+07-07-99 20:59:28 <Sector> Normally it didn't happen, but I managed to make it do that.  (Accidently I wasn't trying to do that).
+07-07-99 21:01:08 <StevenL> Oh, I see.  So it reported you as judy@domain rather than your real login.
+07-07-99 21:02:00 <Sector> Something like that
+07-07-99 21:02:52 <Sector> The problem was corrected by changing VoiceBot so it no longer automatically gave ops, now it has to be requested specifically from the bot.
+07-07-99 21:04:50 <StevenL> That was just a workaround.  You can still spoof the identity.
+07-07-99 21:05:23 <Sector> But it fixed the problem, as VoiceBot requires a password in addition to checking your domain
+07-07-99 21:05:41 <StevenL> Wonder if we should report it to IBM's Java group.
+07-07-99 21:05:45 <Sector> SunnyBear also happened to find a little bug at the time.
+07-07-99 21:06:18 <Sector> I did report it to the email Judy gave me at the time, and the response I got basically said it wasn't a bug
+07-07-99 21:07:31 <StevenL> That's unusual.  Usually IBM responds that it's not a known bug, but if you pay them they'll check it out.
+07-07-99 21:08:22 <Sector> Well, as the Java client is running from Judy's server, I could see it happening
+07-07-99 21:08:56 <StevenL> IBM has an interesting definition of bugs as well...
+07-07-99 21:09:30 <StevenL> If it's working as designed, it's not a bug even if the results are undesirable.
+07-07-99 21:10:46 <Sector> The other problem we found at the time was it wouldn't work for SunnyBear at all
+07-07-99 21:11:17 *** SteveS has left #scoug [21:11:17]
+07-07-99 21:11:29 <Sector> Lost another...
+07-07-99 21:11:51 <StevenL> Me too soon.  Joan's home.
+07-07-99 21:12:02 <Sector> Ah, dinner time?
+07-07-99 21:12:48 <StevenL> No, I ate earlier with my Dad, who's been here for the last 3 weeks or so.  Joan's on her own tonight.
+07-07-99 21:13:25 <Sector> Why didn't you wait¨
+07-07-99 21:23:35 <Sector> Well, I guess nobody's left so I might as well leave as well
+07-07-99 21:23:38 *** Signoff: Sector ((**Poof**)) [21:23:38]
+07-07-99 21:24:57 *** StevenL has left #scoug [21:24:57]
+07-07-99 21:28:37 *** Log Terminated.

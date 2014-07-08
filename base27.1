@@ -1,0 +1,53 @@
+.TH BASE27 1 "04 Nov 1999" "0.2"
+.UC 4
+.SH NAME
+base27 - converts text into a different base
+.SH SYNOPSIS
+.B base27 
+[
+.B \-d
+] [
+.B \-C
+.I codestr
+]
+.I infile
+>
+.I outfile
+.SH DESCRIPTION
+.I base27
+is intended to compress small amounts of textual data (under 100 characters)
+by converting it to a different base -- by default this is base 27, meaning
+it can encode all uppercase alphabetic characters and whitespace.  All lowercase
+characters are uppercased, and characters that cannot be converted are stripped.
+.PP
+You can encode/decode different sets of characters by passing an argument to the
+.B \-C
+parameter; for instance passing 
+.B \-C '01'
+will encode/decode binary strings.
+.SH OPTIONS
+.TP 12
+.B \-d
+Decode text previously encoded using this program.
+.TP
+.B \-C
+Set the
+.I code string
+to be used.  The number base is set to the number of
+characters in this string. The default is "@ABCDEFGHIJKLMNOPQRSTUVWXYZ".
+.TP
+.B \-u
+Do not convert to uppercase when encoding.
+This would be used if lowercase characters were present in the code string.
+.SH "SEE ALSO"
+.PD
+.BR stegparty (1)
+.ne 5
+.SH AUTHOR
+.RS 5
+.nf
+Steven Hugg
+hugg@pobox.com
+http://pobox.com/~hugg/
+.fi
+.RE

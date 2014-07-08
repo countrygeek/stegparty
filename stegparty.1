@@ -1,0 +1,220 @@
+.TH STEGPARTY 1 "04 Nov 1999" "0.2"
+.UC 4
+.SH NAME
+stegparty - tools for hiding data in plain-text files
+.SH SYNOPSIS
+.B stegparty
+.RB [ \-v [ v ]]
+.B \-c
+.I secretfile
+.B \-i
+.I carrierfile
+>
+.I codedfile
+.PP
+.B stegparty \-d
+.RB [ \-v [ v ]]
+.B \-i
+.I codedfile
+>
+.I secretfile
+.SH DEFINITION
+"Steganography is the art and science of communicating in a way
+which hides the existence of the communication. In contrast to cryptography,
+where the enemy is allowed to detect, intercept and modify messages without
+being able to violate certain security premises guaranteed by a
+cryptosystem, the goal of steganography is to hide messages inside other
+harmless messages in a way that does not allow any enemy to even detect that
+there is a second secret message present" [Markus Kuhn].
+.SH DESCRIPTION
+.I StegParty
+is a system for hiding information inside of plain-text files. 
+Unlike similar tools currently available, it does not use random gibberish
+to encode data -- it relies on small alterations to the message, like
+changes to spelling and punctuation.  Because of this you can use any
+plain-text file as your 
+.I carrier
+, and it will be more-or-less
+understandable after the secret message is embedded.
+.PP
+.I StegParty
+also does not by default use whitespace to encode data.  This is
+because whitespace-encoded messages are too easy to detect, and too easy to
+alter so as to destroy the encoded message.  But since
+.I StegParty 
+is customizable, you can add this feature if you want.
+.PP
+One caveat: because these are "small" alterations, the amount of encoded
+data per unit of carrier text is typically small.  For instance, a 4K binary
+file just barely fits into Lewis Carroll's
+.IR "Through The Looking Glass" .
+You can improve on this by adding more rules, or writing more text that
+takes advantage of these rules in your messages.
+.PP
+At the heart of 
+.I StegParty
+is the
+.IR "rules file" .
+This defines all the transformations that can occur on the 
+plain-text message, called a
+.IR "carrier file" .
+Each rule consists of a
+.I rule type
+(whole word, literal, or
+expression) and a set of substitutions. There can be arbitrarily many rules
+in the rules file (up to the limits of your system and of flex).
+.PP
+The encoding process works like this: the carrier file is scanned, and when
+a rule is matched, a substitution is made based on the value x mod n, where
+x is the secret message, and n is the number of substitutions in the current
+rule.  Then x is set to x/n, and the scanning continues until the secret
+message is exhausted, or until the end-of-file is reached.
+.PP
+The decoding process is similar -- the encoded file is scanned, and when a
+rule is matched, the program determines which substitution was made.  The
+index of the substitution times a factor f is added to the secret message. 
+The factor f starts at 1, and is multiplied by n (the number of
+substitutions) every time a rule is matched.
+.PP
+The default rules file encodes your text in the style of the average Net-Lamer,
+using various emoticons, mispellings, mangling of contractions,
+and lame alterations such as "thanx" and "l8ter".  
+It could be improved upon using a suitable corpus, such as an IRC log.
+.SH MAKING THE CODEC
+To make the default encoder, just type 
+.BR make .
+This will make a binary
+.B stegparty
+using the rules in 
+.BR stegparty.rulez .
+To build encoders with
+different rules, create another rules file of the format 
+.B <foo>.rulez
+and then type
+.BR "make <foo>" .
+.PP
+NOTE: The default Makefile requires GNU Make, so you'll need to type
+.B gmake
+or
+.B gnumake
+on some systems.
+.SH THE RULES FILE
+The rules file consists of
+.I rule definitions
+separated by blank lines.  Each rule definition begins with a
+.I rule format string
+, and is followed by the substitutions for that rule.
+.PP
+Let's look at an example rules file:
+.nf
+
+w
+I'm
+i'm
+Im
+
+wc
+ain't
+aint
+
+l
+K
+|<
+
+/("anks"|"anx")/[[:space:]]
+anks
+anx
+
+//[[:alpha:]]!{1,4}/[[:space:]]
+!
+!!
+!!!
+!!!!
+
+.fi
+The first rule is a whole word rule, because the first line begins with a
+"w".  This means that the three strings "I'm", "i'm", and "Im" will match a
+lone word, not as part of a substring (NOTE: see 
+.B BWORD
+and
+.B EWORD
+in the lex file for the definition of the boundaries of a word).
+.PP
+The second rule is also a whole word rule, but has the "c" modifier, which
+means that it will also match the capitalized versions of the substitution words.
+Thus "Ain't", "Aint", "ain't" and "aint" will match, giving a total of four
+substitutions.
+.PP
+The third rule is a literal "l" rule, which means it will match anywhere in
+the text, even inside of words.  Use this rule with caution, it can be tricky
+to implement properly!
+.PP
+The fourth and fifth rule are expression rules, and they take the form of
+one or two slashes followed by a lex expression.  The first rule matches
+"anks" or "anx" followed by whitespace, and the second rule matches between
+one and four '!' characters with a letter on the left side and whitespace on
+the right.
+.PP
+Note the additional slash before the [[:space:]] definition -- this means
+"match everything after this slash, but leave it alone if you replace it".
+Do a 
+.B man lex
+if you need more elucidation.
+.PP
+In the fifth rule, we have a double slash "//".  This means "if you replace
+this string, leave the first character alone".  In this example, we match the
+alphabetic character, but don't want to replace it.  Note that we also use
+an additional slash to ignore the trailing whitespace.
+
+.SH OPTIONS
+.TP 12
+.B \-d
+Decode - extract data from a previously encoded message.
+.TP
+.B \-c
+In convert mode, specify the file to be encoded in the message.
+Can be text, usually will be binary.
+.TP
+.B \-i
+Specify the input file -- the carrier file to be encoded or decoded.
+If none is given, assumes stdin.
+.TP
+.B \-o
+Specify the output file.  If none given, assumes stdout.
+.TP
+.B \-E
+No Early-out - if this is given in encode mode, the entire carrier file
+will be processed, even after the program runs out of data to encode.
+The default behavior is to stop after data is exhausted.
+Generally, you want to use this for data encoded with the
+.I base27
+command, or other data that is sensitive to trailing garbage.
+You don't need it if you're encoding gzip'ed files.
+.SH NOTES
+The nature of the decoding process is such that the decoder can't tell when
+the end of the secret message is reached -- it spews data until reaching the
+end of the carrier file.  If you encode data using gzip, this shouldn't be
+a problem -- gzip ignores trailing garbage.
+.PP
+Because I'm lazy, I didn't use a big-integer library -- I do stuff in chunks
+of 32 bits, which means that there can be some loss of efficiency when using
+rules with more than two substitutions (which is usually the case).  I could
+have used glib++'s Integer class, but I don't like mixing annoying,
+bureaucratic C++ with beautiful, simple C.  Maybe I'll do one in Haskell
+next.
+
+.SH "SEE ALSO"
+.PD
+.BR base27 (1),
+.BR pgp (1),
+.BR gzip (1),
+.BR bzip2 (1)
+.ne 5
+.SH AUTHOR
+.RS 5
+.nf
+Steven Hugg
+hugg@pobox.com
+http://pobox.com/~hugg/
+.fi
+.RE
