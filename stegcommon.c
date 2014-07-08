@@ -32,7 +32,7 @@ char earlyout = 1;
 
 char eof = 0;
 char done = 0;
-FILE *textout = stdout;
+FILE *textout = NULL; // Work around required for GCC, NULL instead of stdout, which is defined later in int main.
 FILE *cipherin = NULL;
 
 int exit_status = 0;
@@ -219,6 +219,7 @@ static void usage()
 
 int main(int argc, char **argv)
 {
+  textout  = stdout; // Work around for GCC
 	int             i;
 	extern int      optind;
 	extern char     *optarg;
